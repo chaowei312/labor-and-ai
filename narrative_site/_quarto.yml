@@ -4,6 +4,8 @@ project:
   output-dir: _site
   resources:
     - figs/*.html
+    - figs/*.png
+    - figs/*.svg
 
 website:
   title: "Labor & AI"
