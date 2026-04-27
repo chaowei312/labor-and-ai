@@ -376,13 +376,13 @@ format:
     &nbsp;&middot;&nbsp; BLS Current Employment Statistics, national, seasonally adjusted
     &nbsp;&middot;&nbsp; BLS OEWS national panel, May releases 2012&ndash;2023
     &nbsp;&middot;&nbsp; Felten, Raj &amp; Seamans, AI Occupational Exposure (SOC 2010)
-    &nbsp;&middot;&nbsp; <span class="mono">fig_01&ndash;08</span>
+    &nbsp;&middot;&nbsp; <span class="mono">fig_01&ndash;10</span>
   </div>
   <div class="editorial-footer__row">
     <b>Methods &amp; data diary</b>
-    &nbsp;&middot;&nbsp; <a href="../data/meta/data_diary.md">data_diary.md</a>
-    &nbsp;&middot;&nbsp; <a href="../data/meta/DATA_SNAPSHOT.md">DATA_SNAPSHOT.md</a>
-    &nbsp;&middot;&nbsp; <a href="../data/meta/OEWS_PANEL_SNAPSHOT.md">OEWS_PANEL_SNAPSHOT.md</a>
+    &nbsp;&middot;&nbsp; <a href="https://github.com/chaowei312/labor-and-ai/blob/main/data/meta/data_diary.md">data_diary.md</a>
+    &nbsp;&middot;&nbsp; <a href="https://github.com/chaowei312/labor-and-ai/blob/main/data/meta/DATA_SNAPSHOT.md">DATA_SNAPSHOT.md</a>
+    &nbsp;&middot;&nbsp; <a href="https://github.com/chaowei312/labor-and-ai/blob/main/data/meta/OEWS_PANEL_SNAPSHOT.md">OEWS_PANEL_SNAPSHOT.md</a>
     &nbsp;&middot;&nbsp; <a href="appendix.html">Appendix &amp; reproducibility</a>
   </div>
 </footer>
