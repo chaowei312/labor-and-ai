@@ -4,6 +4,14 @@ This folder is the **DSAN 5200 submission** workspace. It is **independent** of 
 
 Working theme: **AI-related labor-market change** as an economic / workforce story (national → sector → local → expert), anchored at **Jan 2010** so the AlexNet (2012) + transformer/LLM era both sit inside the panel.
 
+## Submission links
+
+- **Live site:** https://chaowei312.github.io/labor-and-ai/
+- **Classroom repo (graded):** https://github.com/dsan-5200/project-2026-36-1
+- **Public mirror (hosts the site):** https://github.com/chaowei312/labor-and-ai
+
+GitHub Pages is restricted to public repos on the org's Free plan, so the Classroom repo is the canonical source of record and the personal mirror is the deployment target. Both repos contain identical commits.
+
 ## Required deliverables (per `project.pdf`)
 
 - **Hosted website URL** + **GitHub Classroom repo URL** (extraction: [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md)).
@@ -48,13 +56,16 @@ Per-chart drafts live in [`scripts/narrative/figs/`](scripts/narrative/figs/) an
 
 The narrative site is deployed by the workflow at [`.github/workflows/publish.yml`](.github/workflows/publish.yml). It runs on every push that touches the site, the figure scripts, the processed data, or the workflow itself.
 
-One-time setup, after pushing this folder as a GitHub repo:
+The Classroom repo (`dsan-5200/project-2026-36-1`) is **private** and the org is on the GitHub Free plan, which does not allow GitHub Pages on private org repos. The same commit is therefore mirrored to a **public personal repo** (`chaowei312/labor-and-ai`), where Pages is enabled with **Source = GitHub Actions**. The live URL is **https://chaowei312.github.io/labor-and-ai/**.
 
-1. **GitHub → Settings → Pages**: under *Source*, choose **GitHub Actions**.
-2. **GitHub → Actions** tab: enable workflows on this repo (first time only).
-3. Push a commit (or click *Run workflow* on `Deploy narrative site to GitHub Pages` from the Actions tab).
+To re-deploy after edits:
 
-After the run finishes, the site URL appears in the workflow summary and on the *Pages* settings panel — typically `https://<user>.github.io/<repo>/`. That is the URL to submit alongside the GitHub Classroom repo URL.
+```bash
+git push origin main      # graded Classroom copy
+git push mirror main      # public copy that hosts the site
+```
+
+`mirror` is the second remote pointing at `https://github.com/chaowei312/labor-and-ai.git`. The push to `mirror` triggers `Deploy narrative site to GitHub Pages` automatically; the Pages URL appears in the workflow summary.
 
 What the workflow does, in order:
 
