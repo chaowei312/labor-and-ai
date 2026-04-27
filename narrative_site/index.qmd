@@ -66,7 +66,7 @@ format:
       <p class="figure-frame__deck">Hover any bubble for occupation, wage, and headcount. Exposure correlates strongly with wages, barely with headcount.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_08_interactive.html"
+      <iframe src="figs/fig_08_interactive.html?v=2"
               title="AI exposure x wages x employment, 2018, interactive scatter"
               loading="lazy"
               class="plotly-frame"
@@ -90,7 +90,7 @@ format:
       <p class="figure-frame__deck">Right-skewed, with a heavy tail of high-exposure cognitive work. Hover bins for counts.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_04_interactive.html"
+      <iframe src="figs/fig_04_interactive.html?v=2"
               title="AIOE score distribution histogram, interactive"
               loading="lazy"
               class="plotly-frame"
@@ -109,7 +109,7 @@ format:
       <p class="figure-frame__deck">Within-family spread is the bigger story. Hover any point to surface the occupation title.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_05_interactive.html"
+      <iframe src="figs/fig_05_interactive.html?v=2"
               title="AIOE by major SOC group, interactive horizontal boxplot"
               loading="lazy"
               class="plotly-frame"
@@ -139,7 +139,7 @@ format:
       <p class="figure-frame__deck">Click a sector in the legend to isolate it. Hover any line for the indexed value.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_01_interactive.html"
+      <iframe src="figs/fig_01_interactive.html?v=2"
               title="Indexed sector employment, Jan 2010 = 100, interactive"
               loading="lazy"
               class="plotly-frame"
@@ -160,7 +160,7 @@ format:
       <p class="figure-frame__deck">12-month % change. Hover any panel for month-by-month values; the COVID spike dominates, the post-2021 drift is positive.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_02_interactive.html"
+      <iframe src="figs/fig_02_interactive.html?v=2"
               title="Sector momentum YoY, four-panel interactive small multiples"
               loading="lazy"
               class="plotly-frame"
@@ -179,7 +179,7 @@ format:
       <p class="figure-frame__deck">Each sector's share of total nonfarm. Education &amp; health pulls ahead; manufacturing drifts down. The shift predates AI.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_03_interactive.html"
+      <iframe src="figs/fig_03_interactive.html?v=2"
               title="Sector share of total nonfarm employment, interactive small multiples"
               loading="lazy"
               class="plotly-frame"
@@ -209,7 +209,7 @@ format:
       <p class="figure-frame__deck">A single control filters two coordinated views: the wage distribution on the left, the SOC family mix on the right. Sweep <span class="mono">Q1</span> &rarr; <span class="mono">Q4</span> to feel where AI is positioned &mdash; the wage distribution shifts right, and the SOC mix concentrates into Computer &amp; Math, Legal, Business &amp; Financial, Management.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_10_linked_view.html"
+      <iframe src="figs/fig_10_linked_view.html?v=2"
               title="Linked view: AIOE quartile filter drives wage distribution and SOC family mix in lockstep"
               loading="lazy"
               class="plotly-frame"
@@ -228,7 +228,7 @@ format:
       <p class="figure-frame__deck">Annual mean wages by detailed occupation, 2012 &rarr; 2023. The dashed line marks the SOC vintage break, not a market shift.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_06_interactive.html"
+      <iframe src="figs/fig_06_interactive.html?v=2"
               title="OEWS wage distribution by anchor year, interactive boxplot"
               loading="lazy"
               class="plotly-frame"
@@ -249,7 +249,7 @@ format:
       <p class="figure-frame__deck">Distribution of nominal wage growth between 2012 and 2018 across 1,344 SOC 2010 occupations. Median &asymp; +13%; the spread is wider than the headline.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_07_interactive.html"
+      <iframe src="figs/fig_07_interactive.html?v=2"
               title="OEWS wage growth distribution 2012-2018, interactive histogram"
               loading="lazy"
               class="plotly-frame"
@@ -273,7 +273,7 @@ format:
       <p class="figure-frame__deck">Change in the cross-occupation p90/p50 wage ratio from 2012 to 2023, one row per AIOE quartile. The throne thesis predicts the red (high-AIOE) row sits deepest in the pink zone. It sits on the zero line instead. The rows that actually compress are <em>low</em>-AIOE work.</p>
     </header>
     <div class="figure-frame__chart">
-      <iframe src="figs/fig_09_interactive.html"
+      <iframe src="figs/fig_09_interactive.html?v=2"
               title="Change in p90/p50 wage ratio from 2012 to 2023 by AIOE quartile, interactive dot plot"
               loading="lazy"
               class="plotly-frame"
