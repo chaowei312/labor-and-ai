@@ -30,6 +30,20 @@ def _hex_to_rgba(hex_str: str, alpha: float) -> str:
     return f"rgba({r},{g},{b},{alpha})"
 
 
+def _wrap_label(label: str, max_chars: int = 18) -> str:
+    """Insert a single <br> break so a long sector label fits a narrow panel.
+
+    Splits on the last space at or before `max_chars`. Used only for the
+    subplot title (the legend / hover keep the full single-line label).
+    """
+    if len(label) <= max_chars:
+        return label
+    cut = label.rfind(" ", 0, max_chars + 1)
+    if cut == -1:
+        return label
+    return f"{label[:cut]}<br>{label[cut + 1:]}"
+
+
 def main() -> None:
     src = PROCESSED / "bls_ces_national_monthly_long.csv"
     if not src.exists():
@@ -53,7 +67,8 @@ def main() -> None:
         delta = last_val - first_val
         rel = delta / first_val * 100.0
         sign = "+" if delta >= 0 else ""
-        titles.append(f"{SECTOR_LABEL.get(sector, sector)}<br><span style='font-size:11px;color:{COLORS['ink_3']}'>{sign}{delta:.1f} pp ({sign}{rel:.0f}% relative)</span>")
+        wrapped = _wrap_label(SECTOR_LABEL.get(sector, sector))
+        titles.append(f"{wrapped}<br><span style='font-size:11px;color:{COLORS['ink_3']}'>{sign}{delta:.1f} pp ({sign}{rel:.0f}% relative)</span>")
 
     fig = make_subplots(
         rows=1, cols=len(sectors),
@@ -109,9 +124,9 @@ def main() -> None:
 
     apply_theme(
         fig,
-        height=420,
+        height=440,
         overrides={
-            "margin": {"l": 60, "r": 24, "t": 56, "b": 36},
+            "margin": {"l": 60, "r": 24, "t": 72, "b": 36},
             "yaxis": {"title": {"text": "Share of total nonfarm (%)"}, "ticksuffix": "%"},
         },
     )
