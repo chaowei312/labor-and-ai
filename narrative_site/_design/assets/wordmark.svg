@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="Labor and AI">
+  
+  <text x="0" y="56" class="w">Labor <tspan class="a">&amp;</tspan> AI</text>
+  <line x1="0" y1="68" x2="44" y2="68" stroke="#a02030" stroke-width="2"></line>
+</svg>

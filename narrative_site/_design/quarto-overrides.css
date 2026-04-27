@@ -1,0 +1,174 @@
+/* ============================================================================
+   Quarto-overrides.css — minimal patches that let colors_and_type.css govern.
+   Quarto's default html template ships some bootstrap-derived CSS (container
+   widths, navbar bg, link colors, code blocks) that fights the design system.
+   Everything below is a *neutralizer*, not a new design choice.
+   ============================================================================ */
+
+/* Quarto page chrome ------------------------------------------------------- */
+body {
+  font-family: var(--font-serif);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* Editorial reading column — 680px max for prose, full-bleed for charts.    */
+main.content,
+.quarto-container,
+#quarto-content,
+.page-columns {
+  background: var(--paper);
+}
+
+main.content {
+  max-width: var(--reading-max);
+  margin-inline: auto;
+  padding-inline: var(--page-pad-x);
+  padding-block: var(--s-7) var(--s-9);
+}
+
+/* Charts and design-system blocks may break the column for full-bleed. */
+.full-bleed,
+.linked-view,
+figure.figure-frame {
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+/* When a page opts into the editorial layout (page-layout: full + custom
+   .narrative-page wrapper), give the design system the entire page width so
+   the sticky header and hero actually go full-bleed. The reading column is
+   re-imposed on prose blocks by narrative-components.css.                   */
+body:has(.narrative-page) main.content,
+body:has(.narrative-page) #quarto-content {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+body:has(.narrative-page) .page-columns {
+  display: block;
+}
+body:has(.narrative-page) #quarto-margin-sidebar,
+body:has(.narrative-page) #quarto-sidebar,
+body:has(.narrative-page) #TOC,
+body:has(.narrative-page) nav[role="doc-toc"] {
+  display: none !important;
+}
+/* Quarto wraps the navbar at the top in .quarto-title-banner — kill it
+   when we use the editorial header.                                          */
+body:has(.narrative-page) .quarto-title-banner,
+body:has(.narrative-page) header#quarto-header > nav.navbar {
+  display: none !important;
+}
+
+/* Quarto auto-injects #title-block-header inside <main> even when we set
+   title-block-style: none. Hide it whenever an editorial hero is present.
+   This selector does not rely on :has() so it works on every browser.       */
+.narrative-page #title-block-header,
+.narrative-page .quarto-title-block,
+.narrative-main > #title-block-header,
+.narrative-main > .quarto-title-block {
+  display: none !important;
+}
+
+/* Navbar — keep minimal, paper-on-paper, ink links --------------------------*/
+.navbar {
+  background: var(--paper);
+  border-bottom: var(--bd-hair);
+  padding-block: var(--s-3);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  font-family: var(--font-sans);
+  font-size: var(--t-ui-size);
+  color: var(--ink) !important;
+  letter-spacing: 0.01em;
+}
+.navbar .nav-link:hover { color: var(--highlight) !important; }
+
+/* Headings — defer to colors_and_type.css's h1..h4 styling -------------------*/
+h1.title { font-size: var(--t-display-size); line-height: var(--t-display-line); }
+h2 { margin-top: var(--s-7); }
+h3 { margin-top: var(--s-5); }
+
+/* Quarto's section-anchor link uses Bootstrap's primary blue — neutralize. */
+.anchorjs-link { color: var(--ink-3); }
+.anchorjs-link:hover { color: var(--highlight); }
+
+/* Tables — editorial, not bootstrap-zebra --------------------------------- */
+table {
+  font-family: var(--font-sans);
+  font-size: var(--t-ui-size);
+  border-collapse: collapse;
+  width: 100%;
+  margin: var(--s-5) 0;
+}
+table th, table td {
+  padding: var(--s-2) var(--s-3);
+  border-bottom: var(--bd-hair);
+  text-align: left;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+table th {
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: var(--bd-strong);
+}
+
+/* Figures — frame discipline (kicker → title → deck → image → caption) ----- */
+figure { margin: var(--s-7) 0; }
+figcaption { margin-top: var(--s-3); }
+
+/* Code blocks — keep mono + paper-2 surface, not the default Quarto darkbg.  */
+pre, code {
+  font-family: var(--font-mono);
+  font-size: var(--t-mono-size);
+}
+pre {
+  background: var(--paper-2);
+  border: var(--bd-hair);
+  border-radius: var(--r-2);
+  padding: var(--s-4);
+  overflow-x: auto;
+}
+code:not(pre code) {
+  background: var(--paper-2);
+  padding: 0 4px;
+  border-radius: var(--r-1);
+}
+
+/* Quarto callouts — re-skin to editorial sidebar register ----------------- */
+.callout {
+  background: var(--paper-2) !important;
+  border: 0 !important;
+  border-left: 3px solid var(--ink) !important;
+  border-radius: 0 !important;
+  margin: var(--s-5) 0;
+}
+.callout-title {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* TOC — quiet ink, no bootstrap blue ------------------------------------- */
+#TOC, nav[role="doc-toc"] {
+  font-family: var(--font-sans);
+  font-size: var(--t-caption-size);
+}
+#TOC a, nav[role="doc-toc"] a {
+  color: var(--ink-3);
+  text-decoration: none;
+}
+#TOC a:hover, nav[role="doc-toc"] a:hover { color: var(--highlight); }
+#TOC .active, nav[role="doc-toc"] .active { color: var(--ink); font-weight: 600; }
+
+/* Footer / source line ---------------------------------------------------- */
+.page-footer {
+  border-top: var(--bd-hair);
+  background: var(--paper);
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: var(--t-caption-size);
+  padding-block: var(--s-5);
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--paper);padding:20px 20px}
+  .card{width:660px;color:var(--ink)}
+  .grid{display:grid;gap:8px}
+  .swatch{height:54px;border-radius:var(--r-1);border:1px solid rgba(26,26,26,.06)}
+  .meta{font-family:var(--font-mono);font-size:11px;color:var(--ink-3);line-height:1.2;display:flex;justify-content:space-between;gap:6px;margin-top:6px}
+  .meta b{font-family:var(--font-sans);font-size:12px;color:var(--ink);font-weight:600}
+  .lbl{font-family:var(--font-sans);font-size:12px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+  .row{display:flex;gap:12px;align-items:stretch}
+</style></head><body><div class="card">
+<div class="lbl">AIOE — bipolar exposure scale</div>
+<div style="position:relative;height:42px;border-radius:var(--r-1);background:linear-gradient(90deg, var(--exp-low) 0%, var(--exp-mid) 50%, var(--exp-high) 100%)"></div>
+<div style="display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:11px;color:var(--ink-3);margin-top:6px">
+  <span>−2.5 · #3a8fb7 · low exposure (augment)</span>
+  <span>0</span>
+  <span>+1.5 · #a02030 · high exposure (displace)</span>
+</div>
+<div class="lbl" style="margin-top:18px">Quartile ramp · used in fig_09</div>
+<div style="display:flex;height:36px;border-radius:var(--r-1);overflow:hidden">
+  <div style="flex:1;background:var(--aioe-q1)"></div>
+  <div style="flex:1;background:var(--aioe-q2)"></div>
+  <div style="flex:1;background:var(--aioe-q3)"></div>
+  <div style="flex:1;background:var(--aioe-q4)"></div>
+</div>
+<div style="display:flex;font-family:var(--font-mono);font-size:11px;color:var(--ink-3);margin-top:6px">
+  <div style="flex:1">Q1 · #2e6b8c</div>
+  <div style="flex:1">Q2 · #6e9bab</div>
+  <div style="flex:1">Q3 · #c79568</div>
+  <div style="flex:1">Q4 · #a02030</div>
+</div></div></body></html>

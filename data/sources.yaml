@@ -1,0 +1,86 @@
+# Catalog of structured data sources — DSAN 5200 narrative (AI / labor markets)
+# Expand rows as you lock geography and vintages.
+
+version: 1
+
+sources:
+  - id: bls_ces
+    name: "BLS Current Employment Statistics"
+    geography: ["national", "state"]  # verify series availability
+    portal: "https://www.bls.gov/ces/"
+    api_docs: "https://www.bls.gov/developers/"
+    merge_keys: ["series_id", "year", "month"]
+    pull_window:
+      start: "2010-01"
+      end: "latest"
+      rationale: "Anchor before AlexNet (2012) so the deep-learning era + LLM wave both fit; chunked to honor BLS API year cap."
+    notes: "CES series IDs are stable; document chosen industries in meta/."
+    prepared_artifacts:
+      processed_csv: "data/processed/bls_ces_national_monthly_long.csv"
+      indexed_csv: "data/processed/bls_ces_national_indexed_long.csv"
+      snapshot: "data/meta/DATA_SNAPSHOT.md"
+      derived_rates: "data/meta/DERIVED_RATES.md"
+      series_ids_used:
+        - CES0000000001   # total nonfarm
+        - CES6500000001   # education and health services
+        - CES6000000001   # professional and business services
+        - CES3100000001   # manufacturing
+
+  - id: bls_oews
+    name: "BLS Occupational Employment and Wage Statistics"
+    geography: ["national", "state", "metro"]
+    portal: "https://www.bls.gov/oes/"
+    merge_keys: ["soc_code", "area_code", "year"]
+    panel_anchor_years: [2012, 2015, 2018, 2021, 2023]
+    soc_vintage_break: "May 2019 (SOC 2010) → May 2020 (SOC 2018)"
+    fetch_script: "scripts/narrative/fetch_oews_year.py"
+    ingest_script: "scripts/narrative/ingest_oews_panel.py"
+    raw_storage: "data/raw/large/oews/oesm{YY}nat.zip"
+    prepared_artifacts:
+      processed_csv: "data/processed/oews_national_panel_long.csv"
+      snapshot: "data/meta/OEWS_PANEL_SNAPSHOT.md"
+    notes: "Cross-year bridges require the BLS SOC 2010 ↔ 2018 crosswalk; soc_vintage column on the panel makes the split explicit."
+
+  - id: bls_jolts
+    name: "BLS Job Openings and Labor Turnover Survey"
+    geography: ["national", "region", "state", "industry"]
+    portal: "https://www.bls.gov/jlt/"
+    merge_keys: ["industry_code", "area_code", "time"]
+    notes: "Useful for ‘labor demand’ narrative; not AI-specific."
+
+  - id: census_acs
+    name: "American Community Survey (Census)"
+    portal: "https://www.census.gov/programs-surveys/acs/data.html"
+    api: "https://www.census.gov/data/developers/data-sets.html"
+    merge_keys: ["geoid", "year", "variable"]
+    notes: "Requires API key for Census Data API; store in env CENSUS_API_KEY."
+
+  - id: onet
+    name: "O*NET database"
+    portal: "https://www.onetcenter.org/database.html"
+    merge_keys: ["onet_soc_code"]
+    notes: "Use to describe occupations; merge to SOC via official crosswalks."
+
+  - id: ai_exposure_soc
+    name: "Literature-based AI exposure / automation scores (pick one paper)"
+    merge_keys: ["soc_code"]
+    notes: "Placeholder — replace with actual replication file URL + citation when chosen."
+
+  - id: aioe_felten
+    name: "Felten et al. AI Occupational Exposure (AIOE)"
+    upstream: "https://github.com/AIOE-Data/AIOE"
+    file: "AIOE_DataAppendix.xlsx"
+    sheet_occupation: "Appendix A"
+    soc_vintage: "2010"
+    prepared:
+      processed_csv: "data/processed/aioe_soc_2010.csv"
+      snapshot: "data/meta/EXPOSURE_SNAPSHOT.md"
+    notes: "Crosswalk to SOC 2018 before OEWS join."
+
+optional_context:
+  - id: oecd_ai
+    name: "OECD AI policy / indicators"
+    portal: "https://oecd.ai/en/data"
+  - id: indeed_hiring_lab
+    name: "Indeed Hiring Lab (aggregates)"
+    portal: "https://www.hiringlab.org/"

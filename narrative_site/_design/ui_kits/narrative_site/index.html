@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Narrative site — UI kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  body { background: var(--paper); }
+  main { max-width: var(--page-max); margin: 0 auto; padding: 0 var(--page-pad-x); }
+  .reading { max-width: var(--reading-max); }
+  .act-rule { border-top: 2px solid var(--ink); margin: var(--s-9) 0 var(--s-7) 0; }
+  .hero-section {
+    padding: var(--s-9) 0 var(--s-8) 0;
+  }
+  .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-7); margin-top: var(--s-6); }
+  .watch-col h3 {
+    font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    padding-bottom: 8px; border-bottom: 1.5px solid var(--ink);
+    margin: 0 0 var(--s-4) 0;
+  }
+  .watch-item { display: flex; gap: 14px; padding: var(--s-4) 0; border-bottom: 1px solid var(--paper-3); }
+  .watch-item:last-child { border-bottom: 0; }
+  .watch-icon { width: 28px; height: 28px; flex: none; color: var(--watch); }
+  .watch-icon svg { width: 22px; height: 22px; stroke-width: 1.5; }
+  .watch-col.found .watch-icon { color: var(--ink-2); }
+  .watch-title {
+    font-family: var(--font-serif); font-size: 18px; font-weight: 600;
+    line-height: 1.3; color: var(--ink); margin-bottom: 4px;
+  }
+  .watch-body {
+    font-family: var(--font-serif); font-size: 14.5px; line-height: 1.5;
+    color: var(--ink-2); margin: 0;
+  }
+  footer {
+    margin-top: var(--s-10); padding: var(--s-7) 0;
+    border-top: 1px solid var(--rule);
+    font-family: var(--font-sans); font-size: 13px; color: var(--ink-3);
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="NarrativeHeader.jsx"></script>
+<script type="text/babel" src="EditorialBlock.jsx"></script>
+<script type="text/babel" src="FigureFrame.jsx"></script>
+<script type="text/babel" src="LinkedView.jsx"></script>
+<script type="text/babel" src="ChartMocks.jsx"></script>
+
+<script type="text/babel">
+const App = () => {
+  const [act, setAct] = React.useState(1);
+  const handleJump = React.useCallback((n) => {
+    const el = document.getElementById(`act-${n}`);
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - 72;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+    setAct(n);
+  }, []);
+  React.useEffect(() => {
+    const sections = Array.from(document.querySelectorAll("section[data-act]"));
+    if (!sections.length) return;
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter(e => e.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible) setAct(parseInt(visible.target.dataset.act, 10));
+    }, { rootMargin: "-30% 0px -55% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] });
+    sections.forEach(s => io.observe(s));
+    return () => io.disconnect();
+  }, []);
+  return (
+    <>
+      <NarrativeHeader activeAct={act} onJump={handleJump} />
+      <main>
+        <section className="hero-section" id="act-1" data-act="1">
+          <Kicker>A data-journalism feature · April 2026</Kicker>
+          <h1 className="hero" style={{
+            fontFamily: "var(--font-serif)", fontSize: "var(--t-hero-size)",
+            lineHeight: "var(--t-hero-line)", letterSpacing: "var(--t-hero-track)",
+            fontWeight: 600, margin: "0 0 24px 0", textWrap: "balance",
+            maxWidth: "16ch",
+          }}>
+            The throne, <i style={{ color: "var(--highlight)" }}>measured</i>.
+          </h1>
+          <Deck>
+            A widely circulating thesis says AI is being acquired as a permanent capital advantage that dismantles high-paid cognitive work first. Here is what the U.S. labor data can — and cannot — say about it through 2023.
+          </Deck>
+          <Body>
+            We don't validate or reject the thesis. We engage with it honestly: where AI is positioned in the labor market, whether positioning has translated into displacement, and where our data go silent. You leave with a watchlist, not a verdict.
+          </Body>
+        </section>
+
+        <hr className="act-rule"/>
+
+        <section>
+          <Kicker>Act 1 · Where AI is positioned</Kicker>
+          <Headline level={1}>The threat model has a measurable basis.</Headline>
+          <Body>
+            AI's task overlap is concentrated over high-wage cognitive work — exactly where the substitution-of-elites thesis would predict pressure. The headline finding: corr(AIOE, log wage 2018) = +0.58, across 749 matched detailed occupations.
+          </Body>
+
+          <FigureFrame
+            figId="fig_08_aioe_x_oews_2018"
+            kicker="Figure 08 · interactive"
+            title="AI exposure × wage, 2018"
+            deck="Bubble area = total employment. Hover for occupation identity."
+            caveat="OEWS p90 top-coded ≈ $208 k (2018)"
+            source="OEWS May 2018 + Felten et al. AIOE · n = 749 occupations">
+            <AioeWageScatter />
+          </FigureFrame>
+        </section>
+
+        <hr className="act-rule"/>
+
+        <section id="act-2" data-act="2">
+          <Kicker>Act 2 · Through 2023</Kicker>
+          <Headline level={1}>Displacement isn't visible at scale.</Headline>
+          <Body>
+            High-AIOE sectors grew employment <i>fastest</i>, not slowest. Professional &amp; business services +35 %; education &amp; health +40 %; manufacturing (low AIOE) +12 %. The threat-model and the trend-line are not the same thing.
+          </Body>
+
+          <FigureFrame
+            figId="fig_01_ces_indexed"
+            kicker="Figure 01 · interactive"
+            title="Indexed sector employment, Jan 2010 = 100"
+            deck="Click a sector in the legend to isolate it."
+            source="BLS CES, national, seasonally adjusted · Jan 2010 → Mar 2026">
+            <SectorIndexChart />
+          </FigureFrame>
+        </section>
+
+        <hr className="act-rule"/>
+
+        <section id="act-3" data-act="3">
+          <Kicker>Act 3 · Probing the thesis</Kicker>
+          <Headline level={1}>Move the threshold. Watch the band.</Headline>
+          <Body>
+            If the thesis has a visible signature, it should appear when the reader isolates the most-exposed occupations. Drag the AIOE slider; the wage distribution and SOC mix update together. Through 2023, the high-exposure band does not show the predicted collapse.
+          </Body>
+
+          <FigureFrame
+            figId="linked_view"
+            kicker="Linked view · slider drives both panels"
+            title="The high-exposure band, isolated"
+            deck="AIOE threshold → wage distribution + SOC mix.">
+            <LinkedView />
+          </FigureFrame>
+        </section>
+
+        <hr className="act-rule"/>
+
+        <section id="act-5" data-act="5">
+          <Kicker>Coda · What you should watch</Kicker>
+          <Headline level={1}>You leave with a watchlist, not a verdict.</Headline>
+          <div className="watch-grid">
+            <div className="watch-col found">
+              <h3>What the data say</h3>
+              <div className="watch-item">
+                <div className="watch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div><div className="watch-title">AIOE × wage paradox</div><p className="watch-body">AI is positioned over high-wage cognitive work. Through 2023, that positioning has not translated into employment loss in those occupations.</p></div>
+              </div>
+              <div className="watch-item">
+                <div className="watch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div><div className="watch-title">Sector restructuring is decades old</div><p className="watch-body">Education &amp; health and pro &amp; bus services were already pulling ahead by 2010. COVID was a spike, not a regime change.</p></div>
+              </div>
+            </div>
+            <div className="watch-col">
+              <h3 style={{ color: "var(--watch)", borderColor: "var(--watch)" }}>What to watch next</h3>
+              <div className="watch-item">
+                <div className="watch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></div>
+                <div><div className="watch-title">JOLTS in high-AIOE roles</div><p className="watch-body">Openings and separations in Computer &amp; Math and Legal — the strongest single test the thesis can survive in public data.</p></div>
+              </div>
+              <div className="watch-item">
+                <div className="watch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></div>
+                <div><div className="watch-title">BEA capital share, top-1 % income</div><p className="watch-body">The thesis is fundamentally about capital share. BLS occupation data can't see it; BEA + Piketty/Saez/Zucman can.</p></div>
+              </div>
+              <div className="watch-item">
+                <div className="watch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></div>
+                <div><div className="watch-title">Post-2024 OEWS dispersion</div><p className="watch-body">Our panel ends 2023 — a year before broad LLM deployment. The next OEWS release is the first window into post-LLM wage dynamics.</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <b style={{ fontWeight: 600, color: "var(--ink-2)" }}>Sources</b>
+          &nbsp;·&nbsp; BLS Current Employment Statistics
+          &nbsp;·&nbsp; BLS OEWS national panel 2012–2023
+          &nbsp;·&nbsp; Felten, Raj &amp; Seamans, AI Occupational Exposure (SOC 2010)
+          &nbsp;·&nbsp; <span style={{ fontFamily: "var(--font-mono)", fontSize: 12 }}>fig_01–08 + fig_09 + linked_view</span>
+        </footer>
+      </main>
+    </>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>

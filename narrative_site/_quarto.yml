@@ -1,0 +1,35 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: _site
+
+website:
+  title: "Labor & AI"
+  navbar:
+    background: light
+    left:
+      - text: Feature
+        href: index.qmd
+      - text: Appendix
+        href: appendix.qmd
+
+format:
+  html:
+    theme: none
+    toc: true
+    toc-location: right
+    toc-depth: 2
+    css:
+      - _design/colors_and_type.css
+      - _design/narrative-components.css
+      - _design/quarto-overrides.css
+    page-layout: article
+    fig-align: left
+    fig-cap-location: bottom
+    code-tools: false
+    smooth-scroll: true
+    link-external-newwindow: true
+
+execute:
+  echo: false
+  warning: false

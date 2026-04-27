@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}body{background:var(--paper);padding:18px 20px}
+  .card{width:660px;color:var(--ink)}
+  .row{display:flex;align-items:baseline;gap:14px;padding:6px 0;border-bottom:1px dashed var(--paper-3)}
+  .row:last-child{border-bottom:0}
+  .name{font-family:var(--font-mono);font-size:11px;color:var(--ink-3);width:88px;flex:none;letter-spacing:0}
+  .specimen{flex:1;min-width:0;color:var(--ink)}
+  .meta{font-family:var(--font-mono);font-size:11px;color:var(--ink-3);text-align:right;flex:none}
+  .lbl{font-family:var(--font-sans);font-size:12px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;font-weight:600}
+</style></head><body><div class="card">
+<div class="lbl">Radii — small + intentional</div>
+<div style="display:flex;gap:14px;margin-bottom:18px">
+  
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+      <div style="width:64px;height:48px;background:var(--paper-2);border:1px solid var(--paper-3);border-radius:0px"></div>
+      <div style="font-family:var(--font-mono);font-size:11px;color:var(--ink-3)">--r-0</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+      <div style="width:64px;height:48px;background:var(--paper-2);border:1px solid var(--paper-3);border-radius:2px"></div>
+      <div style="font-family:var(--font-mono);font-size:11px;color:var(--ink-3)">--r-1</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+      <div style="width:64px;height:48px;background:var(--paper-2);border:1px solid var(--paper-3);border-radius:4px"></div>
+      <div style="font-family:var(--font-mono);font-size:11px;color:var(--ink-3)">--r-2</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+      <div style="width:64px;height:48px;background:var(--paper-2);border:1px solid var(--paper-3);border-radius:8px"></div>
+      <div style="font-family:var(--font-mono);font-size:11px;color:var(--ink-3)">--r-3</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+      <div style="width:64px;height:48px;background:var(--paper-2);border:1px solid var(--paper-3);border-radius:999px"></div>
+      <div style="font-family:var(--font-mono);font-size:11px;color:var(--ink-3)">--pill</div>
+    </div>
+</div>
+<div class="lbl">Shadows — restrained</div>
+<div style="display:flex;gap:18px">
+  <div style="flex:1;background:var(--paper);border:1px solid var(--paper-3);height:54px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;color:var(--ink-3)">shadow-0 · charts</div>
+  <div style="flex:1;background:var(--paper);box-shadow:0 1px 0 rgba(26,26,26,.04),0 1px 2px rgba(26,26,26,.06);height:54px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;color:var(--ink-3)">shadow-1 · slider</div>
+  <div style="flex:1;background:var(--paper);box-shadow:0 8px 28px -8px rgba(26,26,26,.28);height:54px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;color:var(--ink-3)">tooltip · hover</div>
+</div></div></body></html>

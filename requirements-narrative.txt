@@ -1,0 +1,20 @@
+# DSAN 5200 narrative pipeline (5200_finalproj/scripts/narrative)
+# Install: pip install -r requirements-narrative.txt
+
+pandas>=2.0
+pyyaml>=6.0
+requests>=2.28
+
+# Deterministic EDA reports → data/meta/profiles/
+# Newer package name (optional upgrade): pip install fg-data-profiling → import data_profiling
+ydata-profiling>=4.6.0
+
+# AIOE appendix (Excel)
+openpyxl>=3.1
+
+# Quarto site plots
+matplotlib>=3.7
+
+# Interactive (Plotly) layer used by every fig_*_interactive.py + fig_10_linked_view.py
+plotly>=5.20
+numpy>=1.24

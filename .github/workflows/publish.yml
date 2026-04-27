@@ -1,0 +1,61 @@
+name: Deploy narrative site to GitHub Pages
+
+# Triggers:
+#   - Every push to main / master that touches the narrative site or its inputs.
+#   - Manual run from the Actions tab via "workflow_dispatch".
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "narrative_site/**"
+      - ".github/workflows/publish.yml"
+  workflow_dispatch:
+
+# Permissions required by the official GitHub Pages deploy actions.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Cancel in-flight runs for the same ref so we always deploy the latest commit.
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.5.57"
+
+      # The committed `narrative_site/figs/*.html` fragments are the source of
+      # truth (data is baked into the Plotly output). The site has no executable
+      # `{python}` / `{r}` / `{ojs}` chunks, so Quarto can render directly with
+      # no language runtime.
+      - name: Render Quarto site
+        working-directory: narrative_site
+        run: quarto render
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: narrative_site/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

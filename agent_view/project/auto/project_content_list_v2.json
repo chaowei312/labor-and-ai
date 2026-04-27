@@ -1,0 +1,1992 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Data-Driven Narrative Project Overview"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                117,
+                73,
+                864,
+                106
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ata-Driven Narrative Project Overview Overview What is a Data-Driven Narrative? Motivating Examples Group Selection Source Code Topic Selection Data Collection Project Components Required Visualization Components Static Visualizations Interactive Visualizations Linked Views Infographic Additional Considerations (optional, but nice additions) Technical Considerations Hosting Requirements Client-Side Tools (highly recommended) Server-Side Tools (optional: requires additional planning) Success Criteria"
+                    }
+                ]
+            },
+            "bbox": [
+                137,
+                128,
+                607,
+                484
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Overview"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                525,
+                259,
+                547
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This semester, you will create a comprehensive data-driven narrative that combines rigorous data analysis and visualization with compelling storytelling. Your project should transform complex data into an accessible, engaging narrative that informs and impacts your audience, much like the professional examples outlined below."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                564,
+                875,
+                642
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Project Audience: Assume the audience for your project is the general public"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                654,
+                720,
+                672
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Project submission: (1) URL to your project website (2) URL to your github classroom repo."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                683,
+                825,
+                702
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "What is a Data-Driven Narrative?"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                715,
+                598,
+                741
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A data-driven narrative is more than just charts and statistics. It's a story where data serves as both evidence and protagonist, revealing patterns, trends, or truths that might otherwise remain hidden. The best data narratives:"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                757,
+                866,
+                814
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Tell a human story supported by quantitative evidence"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                825,
+                606,
+                844
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Reveal something unexpected or challenge conventional wisdom"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                852,
+                691,
+                869
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Make complex information accessible through thoughtful visualization"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                877,
+                736,
+                896
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Invite exploration through interactive or layered presentation"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                904,
+                660,
+                922
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Maintain journalistic integrity while engaging readers emotionally"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                58,
+                700,
+                77
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Data-driven journalism is the practice of using structured data, statistical analysis, and computational methods to uncover, verify, and communicate truthful, evidence-based accounts of newsworthy phenomena."
+                    }
+                ]
+            },
+            "bbox": [
+                137,
+                88,
+                810,
+                146
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Motivating Examples"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                160,
+                424,
+                186
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Instead of potentially confining your projects by outlining detailed step-by-step instructions, we felt it would be better to give you motivating examples to show you what we have in mind. These are just examples to inspire you. Obviously, you should not use these specific topics, but this is the level and nature of what we are looking for: e.g. carefully constructed, deeply researched, aesthetically pleasing, well-themed and formatted, unified in structure and design, informative, and written as a well-structured narrative."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                200,
+                866,
+                318
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Primary Example: The following is probably the most representative of our vision for your projects, although we are aware that this level of graphical complexity may be beyond what is feasible given the level of difficulty and the time constraints of the project."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                329,
+                843,
+                387
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Reuters: The Insect Apocalypse"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                398,
+                413,
+                415
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Additional Examples:"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                428,
+                295,
+                445
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The Pudding: Is the Love Song Dying?"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                458,
+                460,
+                476
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Note: There are many other excellent examples on pudding.com ; this is just one example"
+                    }
+                ]
+            },
+            "bbox": [
+                194,
+                484,
+                848,
+                520
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Grist: How a Koch-Owned Chemical Plant Gamed the Clean Air Act"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                530,
+                681,
+                546
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The Guardian: England's Water - The World's Piggy Bank"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                556,
+                604,
+                573
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Amenaza Roboto: The Submerged City (Uruguay 2100)"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                582,
+                593,
+                599
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Shorthand: Examples of Powerful Data Storytelling"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                608,
+                563,
+                626
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This is not an exhaustive list, you can find many other excellent examples on line"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                635,
+                794,
+                651
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Useful resources: Consider reading"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                661,
+                454,
+                678
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "How Data Journalists Create Beautiful Feature Stories"
+                    }
+                ]
+            },
+            "bbox": [
+                194,
+                686,
+                635,
+                703
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "。 Death to Boring Data Storytelling"
+                    }
+                ]
+            },
+            "bbox": [
+                196,
+                713,
+                478,
+                729
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Group Selection"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                746,
+                351,
+                770
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This is a group or individual project. You may choose your own groups of size 1 to 3 people. Groups will be created on Canvas, and you will need to manually add yourself to a Canvas group, even if you are working alone. Group members do not need to be from your own section."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                786,
+                867,
+                843
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Source Code"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                858,
+                299,
+                882
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A GitHub Classroom repository link will be shared with you. You must make incremental progress in this repository and host all source files (figure generation code, Quarto website source code, etc.). You can include data if it is small (< 10-20MB), but otherwise please include it in .gitignore to save space."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                58,
+                874,
+                136
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Topic Selection"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                150,
+                339,
+                175
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "You can choose any topic; however, it must be amenable to a data-driven narrative."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                190,
+                764,
+                208
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Select a topic that:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                220,
+                264,
+                238
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Matters to you personally and will sustain your interest over an entire semester"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                251,
+                802,
+                267
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Has accessible data that you can actually obtain and analyze"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                276,
+                648,
+                294
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Addresses a question you genuinely want to answer"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                303,
+                586,
+                320
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Impacts real people or communities in meaningful ways"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                329,
+                625,
+                347
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Allows for original insight rather than simply confirming what everyone already knows"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                354,
+                852,
+                372
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Strong topics often emerge at the intersection of your interests, available data, and societal relevance. Consider local issues where national data might not tell the complete story, or emerging trends that haven't been thoroughly examined through a data lens."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                385,
+                825,
+                443
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Feel free to choose unconventional topics. For example, students in the past have done very engaging projects on UFOs, avocados and the black market, Bigfoot sightings, etc."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                454,
+                831,
+                492
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "IMPORTANT: All topics and websites created MUST be academically and professionally suitable. Avoid any violent, prejudiced, graphic, hateful, or highly politically biased topics or content. This doesn't mean you can't address difficult topics or issues, but it needs to be done in a professional way. Please use common sense by keeping everything appropriate and academically relevant. If in doubt, reach out to the professor first."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                503,
+                872,
+                601
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Data Collection"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                614,
+                343,
+                638
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Data collection should be a core element of your project. It is discouraged, although not prohibited, to use a pre-built dataset, since they are typically well-studied. The goal is to make yourself stand out and demonstrate your unique skills. Doing a topic that 1000 other students have also done isn't a great way to accomplish this, be creative and try to make yourself stand out. Creating a unique, novel dataset is a great way to set yourself apart."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                655,
+                848,
+                753
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "There is so much happening in the world at the moment, and things are happening so fast that you very well may be the first person to deeply dive in a systematic, data-driven way into a current relevant topic. This could be a great way to make yourself stand out."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                763,
+                854,
+                823
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Begin by exploring data. Browse repositories like data.gov, academic datasets, or organizational databases. Look for datasets that spark questions: Why did this change? Who is affected? What patterns emerge? The best projects often start with curiosity about a specific dataset rather than attempting to find data to support a predetermined conclusion."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                833,
+                866,
+                911
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Remember: Your goal is not to prove what you already believe, but to discover the truth, what the data reveals, and communicate those findings compellingly to others."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                58,
+                867,
+                97
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Project Components"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                111,
+                416,
+                137
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Your final project should include:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                150,
+                377,
+                169
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. A Clear Narrative Arc: Like any good story, your project needs a beginning (establishing context and questions), middle (exploring the data and revealing findings), and end (implications and meaning)."
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                180,
+                856,
+                238
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Original Data Analysis: You must work with real datasets; whether publicly available data, data you collect yourself, or data you obtain through partnerships. Your analysis should reveal genuine insights, not simply visualize obvious trends or conclusions."
+                    }
+                ]
+            },
+            "bbox": [
+                140,
+                246,
+                872,
+                304
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Thoughtful Visualization: Choose visualization methods that clarify rather than confuse. Each chart, map, or graphic should serve your narrative and be appropriate to your data type and story goals."
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                311,
+                861,
+                369
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Contextual Depth: Supplement your data with research, expert interviews, case studies, or other supporting material that helps readers understand what the numbers mean in real-world terms."
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                377,
+                857,
+                434
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Professional Presentation: Your final deliverable should demonstrate production quality appropriate for public consumption."
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                443,
+                867,
+                481
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "6. Note on AI Usage: DO NOT use AI to write the narrative. You can use it as an editor, proofreader, or for textual refactoring, but YOU need to be the author, again in this case Ai is NOT the author, you are."
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                488,
+                872,
+                546
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "7. Optional: Generative AI Component: Generative AI is obviously a hot topic at the moment, and familiarity with it is a marketable skill to add to your resume. You are encouraged to include some of this in your project, either by using it to create relevant images or videos (if you use GenAI content, please cite the source, model, and prompt). Another example would be incorporating audio content, e.g., using AWS Polly or ElevenLabs to create a companion podcast or a narration option for the audience."
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                554,
+                846,
+                671
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "8. AI Usage Log: If you use AI in any way, you MUST add a section at the end or in the appendix outlining honestly how you used AI in the project.'"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                679,
+                812,
+                717
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "9. Appendix: You MUST Include a technical appendix that outlines and summarizes any methodological or analytical details that do not fit naturally into the main narrative (e.g., statistical methods, dimensionality reduction, or complex data-processing steps used to generate figures). Assume the audience of the Appendix is other data scientists (e.g., DSAN students), while the audience for the main text is the general public."
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                724,
+                872,
+                823
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Required Visualization Components"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                835,
+                638,
+                861
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Your project must include the following visualization types as minimum requirements:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                876,
+                799,
+                895
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ALL of the following MUST be publication quality and share a uniform theme and color palette"
+                    }
+                ]
+            },
+            "bbox": [
+                137,
+                58,
+                812,
+                95
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Static Visualizations"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                111,
+                370,
+                133
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At least two static graphics (charts, graphs, or plots that effectively communicate key findings without interaction)"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                150,
+                856,
+                186
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Examples: bar charts, line graphs, scatter plots, heatmaps, small multiples"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                200,
+                746,
+                218
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Purpose: Provide clear, immediate insights that readers can grasp at a glance"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                226,
+                769,
+                244
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Interactive Visualizations"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                260,
+                437,
+                281
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At least two interactive graphics (visualizations that respond to user input through hovering, clicking, filtering, or other interactions)"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                297,
+                852,
+                335
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Examples: filterable charts, zoomable maps, tooltips revealing detail, animated timelines"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                348,
+                859,
+                366
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Purpose: Allow readers to explore data at their own pace and discover personal relevance"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                373,
+                867,
+                391
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Linked Views"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                406,
+                284,
+                428
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At least one linked view (where interaction with one visualization triggers changes in a second, connected visualization)"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                445,
+                862,
+                482
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Examples: selecting a category in one chart filters or highlights data in another; clicking a map region updates an associated time series; brushing a scatter plot updates a histogram"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                494,
+                872,
+                532
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Purpose: Reveal relationships between different dimensions of your data"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                540,
+                738,
+                558
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Infographic"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                574,
+                264,
+                598
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At least one infographic (a designed composition that combines text, icons, and visual elements to explain a concept or summarize key findings). For example, this could be included at the end as a final summary."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                612,
+                870,
+                670
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Examples: process diagrams, comparison layouts, annotated illustrations, visual explainers"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                681,
+                792,
+                718
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Purpose: Make complex information digestible through thoughtful design"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                728,
+                743,
+                746
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Additional Considerations (optional, but nice additions)"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                761,
+                808,
+                784
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Dashboard: Consider adding an interactive dashboard (a coordinated view bringing together multiple data perspectives in a single, cohesive interface)"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                799,
+                861,
+                837
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Examples: summary panels with key metrics, filterable multi-chart displays, comparative views"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                849,
+                856,
+                885
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Purpose: Provide comprehensive understanding and enable exploration across multiple data dimensions"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                895,
+                854,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Map-Based Visualization: Consider adding a map-based visualization (if geographic patterns are relevant to your story)"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                58,
+                864,
+                97
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Examples: choropleth maps, point maps, flow maps, cartograms"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                108,
+                673,
+                126
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Purpose: Reveal spatial patterns and geographic disparities"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                133,
+                633,
+                152
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Temporal Visualization: Consider adding a temporal visualization (if your data involves change over time)"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                165,
+                823,
+                202
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Examples: time series, timelines, animated sequences, before/after comparisons"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                213,
+                799,
+                231
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Purpose: Show how situations evolved or changed"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                239,
+                565,
+                257
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "You are allowed, and encouraged, to go beyond these minimum requirements. However, remember: visualizations should only be included if they strengthen or add to the narrative. Avoid plotting for plotting's sake. Every graphic should earn its place by advancing understanding, revealing patterns, or supporting your argument. Quality and purposefulness matter far more than quantity."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                292,
+                846,
+                390
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Technical Considerations"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                404,
+                485,
+                429
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Hosting Requirements"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                116,
+                445,
+                400,
+                469
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "You MUST host your project online where it can be accessed and graded. Understanding hosting requirements is crucial to your technical planning."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                483,
+                820,
+                522
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It is recommended to use Quarto, but not required."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                534,
+                517,
+                551
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Client-Side Tools (highly recommended)"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                565,
+                531,
+                585
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "What they are: Technologies that run entirely in the user's web browser (HTML, CSS, JavaScript, D3.js, Leaflet, Chart.js, etc.)"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                599,
+                826,
+                638
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Why recommended: Can be hosted on GU Domains, which provides free, reliable hosting for students"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                646,
+                870,
+                683
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Advantages: No server maintenance, no hosting costs, guaranteed availability through semester end and beyond"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                693,
+                843,
+                729
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Examples of client-side approaches: Static HTML pages, JavaScript visualizations, embedded Tableau Public dashboards, Flourish embeds"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                738,
+                808,
+                775
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Server-Side Tools (optional: requires additional planning)"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                790,
+                709,
+                810
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "What they are: Technologies requiring backend processing (Streamlit, Shiny, Flask, Django, etc.)"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                824,
+                812,
+                862
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Important: If you choose server-side tools, you are responsible for finding and maintaining web hosting and server-side functionality until the project is graded"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                869,
+                839,
+                909
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Challenges: Requires paid hosting services (AWS, Heroku, DigitalOcean, etc.), server"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                916,
+                820,
+                934
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "configuration, ongoing maintenance, potential crashes or downtime"
+                    }
+                ]
+            },
+            "bbox": [
+                165,
+                59,
+                697,
+                77
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Consider carefully: Is the server-side functionality essential to your story, or could you achieve similar results with client-side tools?"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                85,
+                843,
+                121
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Recommendation: Unless your project absolutely requires server-side processing (real-time data updates, complex backend calculations, database queries), strongly consider using client-side technologies that can be hosted on GU Domains. This ensures your work remains accessible and eliminates technical hosting issues during the grading period."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                133,
+                872,
+                212
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Success Criteria"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                226,
+                349,
+                250
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Excellent projects should demonstrate:"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                266,
+                423,
+                284
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Analytical rigor: Sound methodology, appropriate statistical approaches, honest representation of data"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                296,
+                799,
+                333
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Narrative clarity: A coherent story that guides readers through complexity without oversimplifying"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                342,
+                818,
+                378
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Visual effectiveness: Graphics that illuminate rather than obscure, with careful attention to design principles"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                387,
+                862,
+                425
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Ethical responsibility: Accurate representation of data, appropriate context, acknowledgment of limitations"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                434,
+                766,
+                470
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Audience engagement: Content that respects readers' intelligence while remaining accessible"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                479,
+                820,
+                515
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Technical proficiency: Reliable hosting, functional interactivity, professional presentation"
+                    }
+                ]
+            },
+            "bbox": [
+                145,
+                525,
+                866,
+                542
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Remember: The goal is to create something you're proud to share, i.e. work that demonstrates your skills, tells a compelling story, and contributes meaningfully to public understanding of an important issue."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                555,
+                856,
+                611
+            ]
+        }
+    ]
+]

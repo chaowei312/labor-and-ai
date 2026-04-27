@@ -1,0 +1,362 @@
+/* ============================================================================
+   narrative-components.css
+   ----------------------------------------------------------------------------
+   Page-composition components for the editorial layout. These translate the
+   JSX components in _design/ui_kits/narrative_site/*.jsx (NarrativeHeader,
+   EditorialBlock, FigureFrame, watch-grid) into CSS classes consumable by a
+   Quarto page (raw HTML inside the .qmd).
+
+   Foundations (color, type, spacing scales, .kicker/.deck/.source-line) live
+   in colors_and_type.css. Quarto chrome neutralizers live in
+   quarto-overrides.css. This file only adds the editorial *layout*.
+   ============================================================================ */
+
+/* Page shell — full bleed, paper background, centred content rail ----------- */
+.narrative-page {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.narrative-main {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--page-pad-x) var(--s-9);
+}
+
+/* The 680px reading column. Charts and the watch-grid break out of this.    */
+.narrative-main .reading,
+.narrative-main .editorial-block,
+.narrative-main p {
+  max-width: var(--reading-max);
+}
+
+/* Editorial header — sticky, paper-on-paper, monogram + act-nav ------------ */
+.narrative-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(251, 249, 244, 0.92);
+  backdrop-filter: saturate(140%) blur(2px);
+  -webkit-backdrop-filter: saturate(140%) blur(2px);
+  border-bottom: var(--bd-hair);
+  padding: 12px var(--page-pad-x);
+}
+
+.narrative-header__inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s-6);
+}
+
+.narrative-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--ink);
+}
+.narrative-header__brand:hover { color: var(--ink); }
+
+.narrative-header__brand img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.narrative-header__wordmark {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.narrative-header__wordmark i {
+  color: var(--highlight);
+  font-style: italic;
+}
+
+.narrative-header__nav {
+  display: flex;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.narrative-header__link {
+  background: none;
+  border: 0;
+  padding: 4px 0;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: color var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out);
+}
+.narrative-header__link:hover { color: var(--ink); text-decoration: none; }
+.narrative-header__link.is-active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+/* Hero section ------------------------------------------------------------- */
+.hero-section {
+  padding: var(--s-9) 0 var(--s-8) 0;
+}
+
+.hero-headline {
+  font-family: var(--font-serif);
+  font-size: var(--t-hero-size);
+  line-height: var(--t-hero-line);
+  letter-spacing: var(--t-hero-track);
+  font-weight: var(--t-hero-weight);
+  color: var(--ink);
+  margin: 0 0 var(--s-5) 0;
+  text-wrap: balance;
+  max-width: 16ch;
+}
+.hero-headline i {
+  color: var(--highlight);
+  font-style: italic;
+}
+
+/* Editorial blocks (kicker / headline / deck / body) — class-based versions */
+.act-eyebrow,
+.figure-frame__kicker {
+  font-family: var(--font-sans);
+  font-size: var(--t-kicker-size);
+  font-weight: var(--t-kicker-weight);
+  letter-spacing: var(--t-kicker-track);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 var(--s-2) 0;
+}
+
+.act-headline {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 14px 0;
+  text-wrap: balance;
+  font-size: clamp(2rem, 1.4rem + 1.4vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.deck-paragraph,
+.editorial-block .deck {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  line-height: 1.55;
+  font-style: italic;
+  color: var(--ink-2);
+  font-weight: 400;
+  margin: 0 0 32px 0;
+  max-width: var(--reading-max);
+  text-wrap: pretty;
+  letter-spacing: -0.005em;
+}
+
+.body-paragraph,
+.editorial-block p:not(.deck) {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin: 0 0 22px 0;
+  max-width: var(--reading-max);
+  text-wrap: pretty;
+}
+
+/* Act sections ------------------------------------------------------------- */
+.act-section {
+  padding: var(--s-7) 0 var(--s-6) 0;
+  scroll-margin-top: 90px; /* room for sticky header on anchor jump */
+}
+
+.act-rule {
+  border: 0;
+  border-top: 2px solid var(--ink);
+  margin: var(--s-9) 0 var(--s-7) 0;
+}
+
+/* Figure frame — kicker → title → deck → chart → caveat → source ----------- */
+figure.figure-frame {
+  margin: var(--s-7) 0;
+  max-width: var(--page-max);
+  padding: 0;
+}
+figure.figure-frame.full-bleed { max-width: none; }
+
+.figure-frame__head {
+  max-width: 720px;
+  margin-bottom: var(--s-4);
+}
+
+.figure-frame__title {
+  font-family: var(--font-serif);
+  font-size: 1.625rem;       /* 26 */
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0 0 8px 0;
+  text-wrap: balance;
+}
+
+.figure-frame__deck {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--ink-2);
+  margin: 0;
+  max-width: var(--reading-max);
+}
+
+.figure-frame__chart {
+  background: transparent;
+}
+.figure-frame__chart img,
+.figure-frame__chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: var(--page-max);
+}
+
+.figure-frame__caveat {
+  margin-top: 10px;
+}
+.caveat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px;
+  border-radius: var(--r-pill);
+  border: var(--bd-hair);
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+figure.figure-frame > figcaption,
+.figure-frame__source {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: var(--bd-hair);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--ink-3);
+  line-height: 1.5;
+}
+figure.figure-frame > figcaption b,
+.figure-frame__source b {
+  font-weight: 600;
+  color: var(--ink-2);
+}
+figure.figure-frame > figcaption .mono,
+.figure-frame__source .mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+/* Coda — watch-grid (infographic) ----------------------------------------- */
+.watch-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-7);
+  margin-top: var(--s-6);
+}
+@media (max-width: 760px) {
+  .watch-grid { grid-template-columns: 1fr; gap: var(--s-6); }
+}
+
+.watch-col h3 {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid var(--ink);
+  margin: 0 0 var(--s-4) 0;
+  color: var(--ink);
+}
+.watch-col.is-watch h3 {
+  color: var(--watch);
+  border-bottom-color: var(--watch);
+}
+
+.watch-item {
+  display: flex;
+  gap: 14px;
+  padding: var(--s-4) 0;
+  border-bottom: 1px solid var(--paper-3);
+  align-items: flex-start;
+}
+.watch-item:last-child { border-bottom: 0; }
+
+.watch-icon {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  color: var(--watch);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.watch-col.is-found .watch-icon { color: var(--ink-2); }
+.watch-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.5;
+}
+
+.watch-title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.watch-body {
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 0;
+  max-width: none; /* override the .narrative-main p cap inside the card */
+}
+
+/* Editorial footer -------------------------------------------------------- */
+.editorial-footer {
+  margin-top: var(--s-10);
+  padding: var(--s-7) 0 var(--s-8);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--ink-3);
+  line-height: 1.6;
+}
+.editorial-footer b {
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.editorial-footer .mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+.editorial-footer a { color: var(--ink-3); }
+.editorial-footer a:hover { color: var(--highlight); }
+.editorial-footer__row + .editorial-footer__row { margin-top: var(--s-3); }

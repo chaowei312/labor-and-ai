@@ -1,0 +1,414 @@
+---
+title: "Labor & AI"
+pagetitle: "In search of the AI throne · Labor & AI"
+page-layout: full
+toc: false
+title-block-style: none
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+---
+
+```{=html}
+<!-- ============================================================================
+     Editorial composition — narrative_site/index.qmd
+     Layout follows _design/ui_kits/narrative_site/index.html (the canonical
+     React reference). Inline JSX styles live in _design/narrative-components.css
+     so this file stays as semantic HTML, not styling soup.
+     The whole composition is wrapped in a {=html} raw block so Pandoc does not
+     interpret indented HTML as Markdown code blocks.
+============================================================================ -->
+<div class="narrative-page">
+
+<header class="narrative-header">
+  <div class="narrative-header__inner">
+    <a class="narrative-header__brand" href="#top" aria-label="Labor & AI — home">
+      <img src="_design/assets/monogram.svg" alt="" />
+      <span class="narrative-header__wordmark">Labor <i>&amp;</i> AI</span>
+    </a>
+    <nav class="narrative-header__nav" aria-label="Sections">
+      <a class="narrative-header__link is-active" href="#act-1" data-act="1">Act 1</a>
+      <a class="narrative-header__link" href="#act-2" data-act="2">Act 2</a>
+      <a class="narrative-header__link" href="#act-3" data-act="3">Act 3</a>
+      <a class="narrative-header__link" href="#coda" data-act="5">Coda</a>
+    </nav>
+  </div>
+</header>
+
+<main class="narrative-main" id="top">
+
+<!-- ─────────── Hero ─────────── -->
+
+<section class="hero-section act-section" id="act-1" data-act="1">
+  <p class="act-eyebrow">A data-journalism investigation · April 2026</p>
+  <h1 class="hero-headline">In search of<br/><i>the AI throne</i>.</h1>
+  <p class="deck-paragraph">The largest U.S. technology companies have committed trillions of dollars to AI infrastructure since the deep-learning era. Whether that bill ever returns its cost in profit is now a real debate &mdash; influential financial analyses argue the revenue-to-capex math may never close. A widely circulating thesis gives a different reading of what is being purchased: not a product line whose margins must eventually arrive, but a permanent capital advantage that dismantles high-paid cognitive work first. This piece walks the U.S. labor record from the deep-learning era to 2023 to see whether that throne is visible in the public data &mdash; and where it isn't.</p>
+  <p class="body-paragraph">We don't try to settle the thesis. We follow it through three questions: where AI is positioned in the labor market, whether that positioning has translated into displacement, and where the public record falls silent. You leave with a watchlist, not a verdict.</p>
+</section>
+
+<hr class="act-rule" />
+
+<!-- ─────────── Act 1 · Where AI is positioned ─────────── -->
+
+<section class="act-section">
+  <p class="act-eyebrow">Act 1 · Where AI is positioned</p>
+  <h2 class="act-headline">The threat model has a measurable basis.</h2>
+
+  <p class="body-paragraph">The Felten&ndash;Raj&ndash;Seamans <strong>AI Occupational Exposure</strong> index scores 749 detailed U.S. occupations on how much of their task content current AI systems can perform. Cross-referenced with the BLS wage panel for 2018 &mdash; the last full year before the SOC 2010 &rarr; 2018 vintage break &mdash; one fact stands out: AI is positioned over high-wage cognitive work. The correlation between AIOE and log mean wage is <strong>+0.58</strong>. That is exactly the substitution surface the displacement thesis would predict.</p>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 08 &middot; interactive</p>
+      <h3 class="figure-frame__title">AI exposure &times; wages &times; employment, 2018</h3>
+      <p class="figure-frame__deck">Hover any bubble for occupation, wage, and headcount. Exposure correlates strongly with wages, barely with headcount.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_08_interactive.html"
+              title="AI exposure x wages x employment, 2018, interactive scatter"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:560px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <div class="figure-frame__caveat">
+      <span class="caveat-chip">OEWS p90 top-coded &asymp; $208k (2018)</span>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; OEWS May 2018 + Felten et al. AIOE &middot; n = 749 occupations
+      &nbsp;&middot;&nbsp;<span class="mono">fig_08_interactive</span>
+    </figcaption>
+  </figure>
+
+  <p class="body-paragraph">Exposure is not uniform across the economy. The AIOE distribution skews right and concentrates in cognitive-occupation families &mdash; office and administrative support, business and financial operations, computer and mathematical, legal &mdash; while production, transportation, and personal-care families sit on the low side. Median exposure within an occupation family says less than the spread inside it: a "lawyer" is one of the most-exposed occupations in the country; a "courier" is one of the least.</p>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 04 &middot; interactive</p>
+      <h3 class="figure-frame__title">How AI exposure is distributed across U.S. occupations</h3>
+      <p class="figure-frame__deck">Right-skewed, with a heavy tail of high-exposure cognitive work. Hover bins for counts.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_04_interactive.html"
+              title="AIOE score distribution histogram, interactive"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:480px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; Felten, Raj &amp; Seamans (AIOE, SOC 2010) &middot; n = 774 occupations
+      &nbsp;&middot;&nbsp;<span class="mono">fig_04_interactive</span>
+    </figcaption>
+  </figure>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 05 &middot; interactive</p>
+      <h3 class="figure-frame__title">Occupation families differ less in median exposure than they do inside themselves.</h3>
+      <p class="figure-frame__deck">Within-family spread is the bigger story. Hover any point to surface the occupation title.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_05_interactive.html"
+              title="AIOE by major SOC group, interactive horizontal boxplot"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:740px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; Felten, Raj &amp; Seamans (AIOE) crosswalked to 22 SOC 2010 major groups
+      &nbsp;&middot;&nbsp;<span class="mono">fig_05_interactive</span>
+    </figcaption>
+  </figure>
+</section>
+
+<hr class="act-rule" />
+
+<!-- ─────────── Act 2 · Through 2023 ─────────── -->
+
+<section class="act-section" id="act-2" data-act="2">
+  <p class="act-eyebrow">Act 2 &middot; Through 2023</p>
+  <h2 class="act-headline">Displacement isn't visible at scale.</h2>
+
+  <p class="body-paragraph">The thesis predicts that high-AIOE work shrinks first. The CES national series, indexed to January 2010, says the opposite. <strong>Professional &amp; business services</strong> (high AIOE) is up roughly <strong>+35%</strong>; <strong>education &amp; health services</strong> is up <strong>+40%</strong>; <strong>manufacturing</strong> (low AIOE) is up about <strong>+12%</strong>. The pandemic registers as a single-period shock, not a regime change. Through 2023 the threat-model surface and the trend-line are not the same thing.</p>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 01 &middot; interactive</p>
+      <h3 class="figure-frame__title">Indexed sector employment, Jan 2010 = 100</h3>
+      <p class="figure-frame__deck">Click a sector in the legend to isolate it. Hover any line for the indexed value.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_01_interactive.html"
+              title="Indexed sector employment, Jan 2010 = 100, interactive"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:500px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; BLS CES, national, seasonally adjusted &middot; Jan 2010 &rarr; Mar 2026
+      &nbsp;&middot;&nbsp;<span class="mono">fig_01_interactive</span>
+    </figcaption>
+  </figure>
+
+  <p class="body-paragraph">Year-on-year change makes the same point in a different register. After the COVID spike washes out, the post-2021 baseline drift is positive in every sector except manufacturing's early-2024 cooldown. Nothing in the YoY traces signals a sector-level AI displacement event &mdash; not yet, not in this window.</p>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 02 &middot; interactive</p>
+      <h3 class="figure-frame__title">Sector momentum, year-over-year</h3>
+      <p class="figure-frame__deck">12-month % change. Hover any panel for month-by-month values; the COVID spike dominates, the post-2021 drift is positive.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_02_interactive.html"
+              title="Sector momentum YoY, four-panel interactive small multiples"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:560px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; BLS CES, national, seasonally adjusted
+      &nbsp;&middot;&nbsp;<span class="mono">fig_02_interactive</span>
+    </figcaption>
+  </figure>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 03 &middot; interactive</p>
+      <h3 class="figure-frame__title">Structural restructuring is decades old.</h3>
+      <p class="figure-frame__deck">Each sector's share of total nonfarm. Education &amp; health pulls ahead; manufacturing drifts down. The shift predates AI.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_03_interactive.html"
+              title="Sector share of total nonfarm employment, interactive small multiples"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:460px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; BLS CES, national, seasonally adjusted
+      &nbsp;&middot;&nbsp;<span class="mono">fig_03_interactive</span>
+    </figcaption>
+  </figure>
+</section>
+
+<hr class="act-rule" />
+
+<!-- ─────────── Act 3 · Probing the thesis ─────────── -->
+
+<section class="act-section" id="act-3" data-act="3">
+  <p class="act-eyebrow">Act 3 &middot; Probing the thesis</p>
+  <h2 class="act-headline">Move the threshold. Watch the band.</h2>
+
+  <p class="body-paragraph">If the thesis has a visible signature, it should appear when we isolate the most-exposed occupations and ask whether <em>their</em> wages are compressing. The OEWS panel, anchor years 2012 through 2023, tells a thinner story than the headlines suggest: median wages drift up; the dispersion stays remarkably stable. The 2018 &rarr; 2021 break in the figure marks the SOC 2010 &rarr; SOC 2018 vintage change, not a labor-market event.</p>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 10 &middot; linked view</p>
+      <h3 class="figure-frame__title">Pick a quartile of AI exposure. Both panels redraw together.</h3>
+      <p class="figure-frame__deck">A single control filters two coordinated views: the wage distribution on the left, the SOC family mix on the right. Sweep <span class="mono">Q1</span> &rarr; <span class="mono">Q4</span> to feel where AI is positioned &mdash; the wage distribution shifts right, and the SOC mix concentrates into Computer &amp; Math, Legal, Business &amp; Financial, Management.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_10_linked_view.html"
+              title="Linked view: AIOE quartile filter drives wage distribution and SOC family mix in lockstep"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:680px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; BLS OEWS 2018 annual mean wage &times; Felten et al. AIOE (SOC 2010) &middot; n = 749 matched detailed occupations
+      &nbsp;&middot;&nbsp;<span class="mono">fig_10_linked_view</span>
+    </figcaption>
+  </figure>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 06 &middot; interactive</p>
+      <h3 class="figure-frame__title">Wages across the deep-learning era</h3>
+      <p class="figure-frame__deck">Annual mean wages by detailed occupation, 2012 &rarr; 2023. The dashed line marks the SOC vintage break, not a market shift.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_06_interactive.html"
+              title="OEWS wage distribution by anchor year, interactive boxplot"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:480px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; BLS OEWS national, May releases 2012&ndash;2023
+      &nbsp;&middot;&nbsp;<span class="mono">fig_06_interactive</span>
+    </figcaption>
+  </figure>
+
+  <p class="body-paragraph">A per-occupation view from 2012 to 2018 &mdash; the last clean SOC 2010 window &mdash; shows nominal wage growth nearly everywhere along the 45&deg; line. A handful of occupations break the rule in either direction; the bulk of the labor market grew in nominal terms. Real (CPI-deflated) wages are an open question we flag explicitly.</p>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 07 &middot; interactive</p>
+      <h3 class="figure-frame__title">Wage growth, occupation by occupation</h3>
+      <p class="figure-frame__deck">Distribution of nominal wage growth between 2012 and 2018 across 1,344 SOC 2010 occupations. Median &asymp; +13%; the spread is wider than the headline.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_07_interactive.html"
+              title="OEWS wage growth distribution 2012-2018, interactive histogram"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:480px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <div class="figure-frame__caveat">
+      <span class="caveat-chip">Nominal &middot; CPI-deflated panel forthcoming</span>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; BLS OEWS national, May 2012 + May 2018 (SOC 2010 era only)
+      &nbsp;&middot;&nbsp;<span class="mono">fig_07_interactive</span>
+    </figcaption>
+  </figure>
+
+  <p class="body-paragraph">The thesis we kept hearing in every conversation about this dataset has a sharper form: <em>that the people who own the AI are using it to compress the people who used to be paid the most for thinking.</em> That is a falsifiable claim. Sort occupations into quartiles by AI exposure, hold those quartiles fixed, and ask one question: from 2012 to 2023, did the cross-occupation p90/p50 wage ratio inside each quartile <em>narrow</em>? If the throne is being assembled, the high-AIOE row (Q4) should land deepest in negative territory. The low-AIOE row should sit closest to zero.</p>
+
+  <figure class="figure-frame">
+    <header class="figure-frame__head">
+      <p class="figure-frame__kicker">Figure 09 &middot; testing the throne</p>
+      <h3 class="figure-frame__title">If the throne were being built, the red row would have moved left</h3>
+      <p class="figure-frame__deck">Change in the cross-occupation p90/p50 wage ratio from 2012 to 2023, one row per AIOE quartile. The throne thesis predicts the red (high-AIOE) row sits deepest in the pink zone. It sits on the zero line instead. The rows that actually compress are <em>low</em>-AIOE work.</p>
+    </header>
+    <div class="figure-frame__chart">
+      <iframe src="figs/fig_09_interactive.html"
+              title="Change in p90/p50 wage ratio from 2012 to 2023 by AIOE quartile, interactive dot plot"
+              loading="lazy"
+              class="plotly-frame"
+              style="width:100%; height:400px; border:0; background:var(--paper); display:block;"></iframe>
+    </div>
+    <div class="figure-frame__caveat">
+      <span class="caveat-chip">2023 limited to SOC codes that persisted from SOC 2010</span>
+      <span class="caveat-chip">OEWS p90 top-coded near $208k</span>
+      <span class="caveat-chip">window closes pre&ndash;LLM mass deployment</span>
+    </div>
+    <figcaption>
+      <b>Source</b> &middot; BLS OEWS national + Felten et al. AIOE; quartile cuts on AIOE sample, n &ge; 152 occupations per row in 2023
+      &nbsp;&middot;&nbsp;<span class="mono">fig_09_interactive</span>
+    </figcaption>
+  </figure>
+
+  <p class="body-paragraph">Two readings are honest at once. <strong>First</strong>: through the public 2023 panel, the visible signature of the throne thesis is absent. The high-AIOE row didn't move (+0.002). The two rows that <em>did</em> compress &mdash; low-AIOE Q1 (&minus;0.061) and Q2 (&minus;0.058) &mdash; are the opposite of what a top-down AI substitution story would predict. <strong>Second</strong>: this is a coarse instrument. The OEWS p90 is top-coded near $208,000, broad LLM deployment did not arrive until late 2022, and the 2023 panel is restricted to occupations whose SOC 2010 code survived into SOC 2018. The chart can rule the thesis out at the level of the public panel; it cannot rule it out for the executive tier above the top-code or for the year that has not yet been released.</p>
+</section>
+
+<hr class="act-rule" />
+
+<!-- ─────────── Coda · Watchlist ─────────── -->
+
+<section class="act-section" id="coda" data-act="5">
+  <p class="act-eyebrow">Coda &middot; What you should watch</p>
+  <h2 class="act-headline">You leave with a watchlist, not a verdict.</h2>
+
+  <p class="body-paragraph">Our window closes in 2023, a year before broad LLM deployment shows up in the federal panels. If the substitution-of-elites thesis is going to leave a visible signature, it should arrive in the next OEWS release and the next JOLTS series for high-AIOE occupations. Two columns &mdash; what we've found, and what we're watching for &mdash; sit side by side because they have to.</p>
+
+  <div class="watch-grid">
+    <div class="watch-col is-found">
+      <h3>What the data say</h3>
+      <div class="watch-item">
+        <div class="watch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="watch-title">AIOE &times; wage paradox</div>
+          <p class="watch-body">AI is positioned over high-wage cognitive work. Through 2023, that positioning has not translated into employment loss in those occupations.</p>
+        </div>
+      </div>
+      <div class="watch-item">
+        <div class="watch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="watch-title">Sector restructuring is decades old</div>
+          <p class="watch-body">Education &amp; health and professional &amp; business services were already pulling ahead by 2010. COVID was a spike, not a regime change.</p>
+        </div>
+      </div>
+      <div class="watch-item">
+        <div class="watch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="watch-title">High-AIOE p90/p50 is flat</div>
+          <p class="watch-body">In the high-exposure quartile, the cross-occupation p90/p50 wage ratio is essentially identical in 2023 and 2012. The throne thesis has no signature in the public panel through 2023.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="watch-col is-watch">
+      <h3>What to watch next</h3>
+      <div class="watch-item">
+        <div class="watch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div>
+          <div class="watch-title">JOLTS in high-AIOE roles</div>
+          <p class="watch-body">Openings and separations in Computer &amp; Math and Legal &mdash; the strongest single test the thesis can survive in public data.</p>
+        </div>
+      </div>
+      <div class="watch-item">
+        <div class="watch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div>
+          <div class="watch-title">BEA capital share, top-1% income</div>
+          <p class="watch-body">The thesis is fundamentally about capital share. BLS occupation data can't see it; BEA factor-share series and Piketty/Saez/Zucman top-income panels can.</p>
+        </div>
+      </div>
+      <div class="watch-item">
+        <div class="watch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div>
+          <div class="watch-title">Post-2024 OEWS dispersion</div>
+          <p class="watch-body">Our panel ends 2023 &mdash; a year before broad LLM deployment. The next OEWS release is the first window into post-LLM wage dynamics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── Footer ─────────── -->
+
+<footer class="editorial-footer">
+  <div class="editorial-footer__row">
+    <b>Sources</b>
+    &nbsp;&middot;&nbsp; BLS Current Employment Statistics, national, seasonally adjusted
+    &nbsp;&middot;&nbsp; BLS OEWS national panel, May releases 2012&ndash;2023
+    &nbsp;&middot;&nbsp; Felten, Raj &amp; Seamans, AI Occupational Exposure (SOC 2010)
+    &nbsp;&middot;&nbsp; <span class="mono">fig_01&ndash;08</span>
+  </div>
+  <div class="editorial-footer__row">
+    <b>Methods &amp; data diary</b>
+    &nbsp;&middot;&nbsp; <a href="../data/meta/data_diary.md">data_diary.md</a>
+    &nbsp;&middot;&nbsp; <a href="../data/meta/DATA_SNAPSHOT.md">DATA_SNAPSHOT.md</a>
+    &nbsp;&middot;&nbsp; <a href="../data/meta/OEWS_PANEL_SNAPSHOT.md">OEWS_PANEL_SNAPSHOT.md</a>
+    &nbsp;&middot;&nbsp; <a href="appendix.html">Appendix &amp; reproducibility</a>
+  </div>
+</footer>
+
+</main>
+</div>
+
+<script>
+// Active-act highlight on the editorial header. Mirrors the IntersectionObserver
+// in _design/ui_kits/narrative_site/index.html. No framework, no dependency.
+(function () {
+  var sections = document.querySelectorAll("section[data-act]");
+  var links    = document.querySelectorAll(".narrative-header__link[data-act]");
+  if (!sections.length || !links.length) return;
+  var setActive = function (n) {
+    links.forEach(function (l) {
+      l.classList.toggle("is-active", l.dataset.act === String(n));
+    });
+  };
+  var io = new IntersectionObserver(function (entries) {
+    var visible = entries
+      .filter(function (e) { return e.isIntersecting; })
+      .sort(function (a, b) { return b.intersectionRatio - a.intersectionRatio; })[0];
+    if (visible) setActive(visible.target.dataset.act);
+  }, { rootMargin: "-30% 0px -55% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] });
+  sections.forEach(function (s) { io.observe(s); });
+})();
+</script>
+```
