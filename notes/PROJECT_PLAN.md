@@ -1,6 +1,6 @@
 # DSAN 5200 — Data-Driven Narrative (project plan)
 
-This folder holds the **5200 submission** track, separate from `../routing-in-sparse-attention/` (5300 research). The official brief is extracted at [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md).
+This folder holds the **5200 submission** track, separate from `../routing-in-sparse-attention/` (5300 research). The official brief is extracted at [`agent_view/project/auto/project.md`](../agent_view/project/auto/project.md).
 
 ---
 
@@ -56,13 +56,13 @@ Keep scope tight: **two fields deeply** or **three lightly** + **one local case*
 
 ## Agentic / assisted EDA (optional tooling)
 
-Curated open-source options: **[`AGENT_EDA_TOOLS.md`](AGENT_EDA_TOOLS.md)** — agent **skills** repos (e.g. awesome lists, scientific skills), **PandasAI**, **LangGraph**, deterministic **ydata-profiling**, and a suggested **minimal auditable stack** for `data/raw` → `processed`. **Fork upstream repos before customizing** — see **[`vendor/README.md`](vendor/README.md)** and **[`scripts/vendor/README.md`](scripts/vendor/README.md)**. Disclosure in the course **AI usage log** if you use LLM-assisted exploration.
+Curated open-source options: **[`AGENT_EDA_TOOLS.md`](AGENT_EDA_TOOLS.md)** — agent **skills** repos (e.g. awesome lists, scientific skills), **PandasAI**, **LangGraph**, deterministic **ydata-profiling**, and a suggested **minimal auditable stack** for `data/raw` → `processed`. **Fork upstream repos before customizing** — see **[`vendor/README.md`](../vendor/README.md)** and **[`scripts/vendor/README.md`](../scripts/vendor/README.md)**. Disclosure in the course **AI usage log** if you use LLM-assisted exploration.
 
 ---
 
 ## Data strategy (starter sources)
 
-Structured catalog + folders: [`data/README.md`](data/README.md), [`data/sources.yaml`](data/sources.yaml). Pipeline scripts: [`scripts/narrative/README.md`](scripts/narrative/README.md).
+Structured catalog + folders: [`data/README.md`](../data/README.md), [`data/sources.yaml`](../data/sources.yaml). Pipeline scripts: [`scripts/narrative/README.md`](../scripts/narrative/README.md).
 
 Use **one consistent employment/wage spine** (merge keys = time + geography + SOC or industry):
 
@@ -83,7 +83,7 @@ See **[`VISUALIZATION_PLAN.md`](VISUALIZATION_PLAN.md)** — maps **brief minimu
 
 ## Assignment checklist (from brief)
 
-Cross-check [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md) before final submission.
+Cross-check [`agent_view/project/auto/project.md`](../agent_view/project/auto/project.md) before final submission.
 
 - [ ] **Deliverables:** URL to **hosted project website** + GitHub Classroom repo link.
 - [ ] **Visual minimums (publication quality, unified theme):**
@@ -115,14 +115,14 @@ The sparse-attention / routing research in `../routing-in-sparse-attention/` is 
 ## Time window
 
 - **Anchor: January 2010.** Two-year baseline ahead of AlexNet (2012); same window covers the post-2017 transformer/LLM wave through the latest available BLS month.
-- CES is fetched in chunks across this window; OEWS is sampled at **2012, 2015, 2018, 2021, 2023** (May reference period each year). All artifacts include a `soc_vintage` flag because OEWS shifts from SOC 2010 → SOC 2018 between May 2019 and May 2020. See [`data/meta/data_diary.md`](data/meta/data_diary.md) and [`data/meta/OEWS_PANEL_SNAPSHOT.md`](data/meta/OEWS_PANEL_SNAPSHOT.md).
+- CES is fetched in chunks across this window; OEWS is sampled at **2012, 2015, 2018, 2021, 2023** (May reference period each year). All artifacts include a `soc_vintage` flag because OEWS shifts from SOC 2010 → SOC 2018 between May 2019 and May 2020. See [`data/meta/data_diary.md`](../data/meta/data_diary.md) and [`data/meta/OEWS_PANEL_SNAPSHOT.md`](../data/meta/OEWS_PANEL_SNAPSHOT.md).
 
 ---
 
 ## Next actions
 
 1. Lock **geography** (U.S. national + one local) and **2–3 comparison slices** (sectors or SOC groups).
-2. ~~Download and document **data vintages** and merge keys~~ → diary: [`data/meta/data_diary.md`](data/meta/data_diary.md).
+2. ~~Download and document **data vintages** and merge keys~~ → diary: [`data/meta/data_diary.md`](../data/meta/data_diary.md).
 3. ~~Storyboard~~ → [`STORYBOARD.md`](STORYBOARD.md) (wireframe vs ladder).
 4. ~~Pipeline + Quarto wireframe~~ → `scripts/narrative/run_pipeline.ps1` / `.sh`.
 5. ~~Extend CES to deep-learning era (2010+)~~ → 195 months × 4 sectors, no gaps.

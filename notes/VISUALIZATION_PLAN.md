@@ -11,7 +11,7 @@ Your site will not match Reuters/Pudding production budgets; the goal is to **bo
 
 ## 1. Course minimums (must satisfy)
 
-From [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md):
+From [`agent_view/project/auto/project.md`](../agent_view/project/auto/project.md):
 
 | Requirement | Count | Notes |
 |-------------|------:|--------|
@@ -26,7 +26,7 @@ From [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md):
 
 ## 1.5. Design system — locked
 
-The Labor & AI design system lives at [`narrative_site/_design/`](narrative_site/_design/) and is the canonical source for color, type, spacing, and chart chrome across every surface on the page (web HTML, Plotly, Observable Plot, matplotlib statics).
+The Labor & AI design system lives at [`narrative_site/_design/`](../narrative_site/_design/) and is the canonical source for color, type, spacing, and chart chrome across every surface on the page (web HTML, Plotly, Observable Plot, matplotlib statics).
 
 **Typography (locked):**
 
@@ -40,7 +40,7 @@ All three loaded from Google Fonts CDN via `narrative_site/_design/colors_and_ty
 
 **Color (locked):** see `narrative_site/_design/colors_and_type.css` and the Python mirror in `scripts/narrative/figs/_common.py` (`PALETTE` dict). The two are kept in sync by hand — when one changes, edit the other in the same commit.
 
-**Wiring summary:** `_quarto.yml` loads `colors_and_type.css` + `quarto-overrides.css`; matplotlib scripts pull tokens from `_common.py`; Plotly scripts pull tokens from `_plotly` (which re-exports the design-system Python theme); Observable Plot cells import `observable_theme.js`. Full wiring map in [`narrative_site/_design/INTEGRATION.md`](narrative_site/_design/INTEGRATION.md).
+**Wiring summary:** `_quarto.yml` loads `colors_and_type.css` + `quarto-overrides.css`; matplotlib scripts pull tokens from `_common.py`; Plotly scripts pull tokens from `_plotly` (which re-exports the design-system Python theme); Observable Plot cells import `observable_theme.js`. Full wiring map in [`narrative_site/_design/INTEGRATION.md`](../narrative_site/_design/INTEGRATION.md).
 
 ---
 

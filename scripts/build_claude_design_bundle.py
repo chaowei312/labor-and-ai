@@ -3,7 +3,7 @@ Build a self-contained Claude Design bundle.
 
 The bundle mirrors the subset of the live repo that an external Claude Design /
 Sonnet / Opus session needs to produce the DSAN 5200 narrative-website
-production layer. All paths referenced in `CLAUDE_DESIGN_PROMPT.md` resolve
+production layer. All paths referenced in `notes/CLAUDE_DESIGN_PROMPT.md` resolve
 inside the bundle the same way they do in the source repo.
 
 Usage:
@@ -13,7 +13,7 @@ Usage:
 Output:
     5200_finalproj/claude_design_bundle/   (gitignored)
 
-Re-run any time `STORYBOARD.md`, `CLAUDE_DESIGN_PROMPT.md`, any `fig_*.py`,
+Re-run any time `notes/STORYBOARD.md`, `notes/CLAUDE_DESIGN_PROMPT.md`, any `fig_*.py`,
 or any processed CSV changes — the script is deterministic and safe to rerun.
 """
 from __future__ import annotations
@@ -28,13 +28,13 @@ ROOT = Path(__file__).resolve().parent.parent
 BUNDLE = ROOT / "claude_design_bundle"
 
 EDITORIAL_DOCS = [
-    "CLAUDE_DESIGN_PROMPT.md",
-    "STORYBOARD.md",
-    "PROJECT_PLAN.md",
-    "VISUALIZATION_PLAN.md",
-    "AGENT_HARDWARE_BUDGET.md",
-    "AGENT_EDA_TOOLS.md",
-    "REQUIREMENTS_REVIEW.md",
+    "notes/CLAUDE_DESIGN_PROMPT.md",
+    "notes/STORYBOARD.md",
+    "notes/PROJECT_PLAN.md",
+    "notes/VISUALIZATION_PLAN.md",
+    "notes/AGENT_HARDWARE_BUDGET.md",
+    "notes/AGENT_EDA_TOOLS.md",
+    "notes/REQUIREMENTS_REVIEW.md",
     "agent_view/project/auto/project.md",
 ]
 
@@ -205,7 +205,7 @@ def write_bundle_readme(stats: dict) -> None:
         "## How to use it",
         "",
         "1. Open a fresh Claude Design / Sonnet / Opus session.",
-        "2. Paste the contents of [`CLAUDE_DESIGN_PROMPT.md`](CLAUDE_DESIGN_PROMPT.md) as the first message.",
+        "2. Paste the contents of [`notes/CLAUDE_DESIGN_PROMPT.md`](notes/CLAUDE_DESIGN_PROMPT.md) as the first message.",
         "3. Attach this whole folder as context (drag-and-drop or upload). Every path",
         "   in the prompt resolves inside this folder, mirroring the live repo.",
         "4. Ask the model for one paragraph of design intent before any code, then walk",
@@ -215,13 +215,13 @@ def write_bundle_readme(stats: dict) -> None:
         "",
         "| Section | What it gives the model |",
         "|---|---|",
-        "| `CLAUDE_DESIGN_PROMPT.md` | The prompt itself. |",
-        "| `STORYBOARD.md` | Four-act story arc, audience hook, per-product viz/interaction plan. |",
-        "| `PROJECT_PLAN.md` | Editorial intent, sector pillars, time window, risks. |",
-        "| `VISUALIZATION_PLAN.md` | Earlier design vocabulary doc (Reuters/Pudding pacing, theme). |",
-        "| `AGENT_HARDWARE_BUDGET.md` | Local hardware (matters if model proposes WebGL/Canvas hero). |",
-        "| `AGENT_EDA_TOOLS.md` | Tooling decisions for the EDA layer (already locked). |",
-        "| `REQUIREMENTS_REVIEW.md` | Brief-compliance checklist. |",
+        "| `notes/CLAUDE_DESIGN_PROMPT.md` | The prompt itself. |",
+        "| `notes/STORYBOARD.md` | Four-act story arc, audience hook, per-product viz/interaction plan. |",
+        "| `notes/PROJECT_PLAN.md` | Editorial intent, sector pillars, time window, risks. |",
+        "| `notes/VISUALIZATION_PLAN.md` | Earlier design vocabulary doc (Reuters/Pudding pacing, theme). |",
+        "| `notes/AGENT_HARDWARE_BUDGET.md` | Local hardware (matters if model proposes WebGL/Canvas hero). |",
+        "| `notes/AGENT_EDA_TOOLS.md` | Tooling decisions for the EDA layer (already locked). |",
+        "| `notes/REQUIREMENTS_REVIEW.md` | Brief-compliance checklist. |",
         "| `agent_view/project/auto/project.md` | The actual course brief. |",
         "| `scripts/narrative/figs/` | 8 matplotlib draft scripts + `_common.py` + `REVIEW.md` + `README.md`. |",
         "| `data/meta/` | Provenance, snapshots, source catalog. |",
@@ -252,7 +252,7 @@ def write_bundle_readme(stats: dict) -> None:
         "",
         "Whenever any of these change in the live repo:",
         "",
-        "- `STORYBOARD.md`, `CLAUDE_DESIGN_PROMPT.md`, `PROJECT_PLAN.md`, `VISUALIZATION_PLAN.md`",
+        "- `notes/STORYBOARD.md`, `notes/CLAUDE_DESIGN_PROMPT.md`, `notes/PROJECT_PLAN.md`, `notes/VISUALIZATION_PLAN.md`",
         "- Any `scripts/narrative/figs/fig_*.py` or `_common.py`",
         "- Any data in `data/processed/` (CSVs need to refresh)",
         "- Any rendered figure under `narrative_site/figs/`",
@@ -320,7 +320,7 @@ def main() -> None:
     stats["total"] = sum(1 for p in BUNDLE.rglob("*") if p.is_file())
     print(f"\nBundle ready at {BUNDLE.relative_to(ROOT)}: {stats['total']} files.")
     print(
-        "Next: paste CLAUDE_DESIGN_PROMPT.md into a fresh Claude Design session "
+        "Next: paste notes/CLAUDE_DESIGN_PROMPT.md into a fresh Claude Design session "
         "and attach this folder."
     )
 

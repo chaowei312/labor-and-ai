@@ -68,7 +68,7 @@ This project used AI assistance for **code, layout, design, and copy editing**. 
 
 Two prompts shaped the project; both are committed in the repository so the audit trail is reproducible.
 
-1. **Claude Design production prompt.** A single brief that locked the editorial spine, the data the design system could read, the deliverable list (interactive charts, linked view, infographic, optional hero), and the voice discipline ("labor-economics vocabulary, not partisan triggers"). The full text is at `5200_finalproj/CLAUDE_DESIGN_PROMPT.md`. Excerpt:
+1. **Claude Design production prompt.** A single brief that locked the editorial spine, the data the design system could read, the deliverable list (interactive charts, linked view, infographic, optional hero), and the voice discipline ("labor-economics vocabulary, not partisan triggers"). The full text is at `5200_finalproj/notes/CLAUDE_DESIGN_PROMPT.md`. Excerpt:
 
    > You are a senior data-visualization designer for a public-interest narrative web feature on AI exposure and the U.S. labor market, January 2010 → present. The data pipeline is built (BLS CES + OEWS + Felten et al. AIOE); the editorial story is locked from completed EDA; eight matplotlib drafts are already triaged. Your job is to produce the **production layer**: interactive charts, one linked view, one closing infographic, and an optional hero — to a Reuters/Pudding-adjacent quality bar.
    >
@@ -80,7 +80,7 @@ Two prompts shaped the project; both are committed in the repository so the audi
    >
    > **Do** treat the pipeline as a **discovery loop**: (1) ensure `data/processed/` has tables; (2) read `data/meta/DATA_SNAPSHOT.md` and the CSV(s) directly — cite numbers from files; (3) run `profile_dataset.py` so distributions and correlations come from HTML reports, not intuition; (4) only then characterize **what the data shows**.
 
-A companion tooling brief (`5200_finalproj/AGENT_EDA_TOOLS.md`) explains why deterministic profiling (`ydata-profiling`) is the source of truth for numbers and why conversational LLMs are not.
+A companion tooling brief (`5200_finalproj/notes/AGENT_EDA_TOOLS.md`) explains why deterministic profiling (`ydata-profiling`) is the source of truth for numbers and why conversational LLMs are not.
 
 ### Claude Design products that were incorporated
 

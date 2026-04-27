@@ -22,18 +22,14 @@ GitHub Pages is restricted to public repos on the org's Free plan, so the Classr
 
 | File | Purpose |
 |------|---------|
-| [`PROJECT_PLAN.md`](PROJECT_PLAN.md) | Narrative arc, sector pillars (services × manufacturing equal weight), checklist |
-| [`STORYBOARD.md`](STORYBOARD.md) | Wireframe of site sections vs data artifacts |
-| [`VISUALIZATION_PLAN.md`](VISUALIZATION_PLAN.md) | Reuters/Pudding-style scroll plan + requirement mapping |
+| [`narrative_site/`](narrative_site/) | Quarto site (renders to `_site/`, gitignored). The deliverable. |
 | [`scripts/narrative/figs/README.md`](scripts/narrative/figs/README.md) | **Per-chart Python chunks** (one figure per file) — review iteratively before knitting into Quarto |
 | [`data/README.md`](data/README.md) · [`data/sources.yaml`](data/sources.yaml) | Source catalog, merge keys, time windows |
 | [`data/meta/data_diary.md`](data/meta/data_diary.md) | Pipeline status, vintages, suppression caveats |
-| [`narrative_site/`](narrative_site/) | Quarto site (renders to `_site/`, gitignored) |
 | [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md) | MinerU extract of the brief |
-| [`AGENT_EDA_TOOLS.md`](AGENT_EDA_TOOLS.md) · [`AGENT_HARDWARE_BUDGET.md`](AGENT_HARDWARE_BUDGET.md) | Optional tooling and CPU/GPU policy |
-| [`REQUIREMENTS_REVIEW.md`](REQUIREMENTS_REVIEW.md) | Checklist vs brief |
+| [`notes/`](notes/) | Planning, design and process notes (see [`notes/README.md`](notes/README.md)) |
 
-**For agents:** narrative findings must be **discovered from `data/processed/` and `data/meta/`** — `PROJECT_PLAN.md` is hypothesis space, not evidence. See `.cursor/rules/dsan-5200-data-discovery.mdc`.
+**For agents:** narrative findings must be **discovered from `data/processed/` and `data/meta/`** — [`notes/PROJECT_PLAN.md`](notes/PROJECT_PLAN.md) is hypothesis space, not evidence. See `.cursor/rules/dsan-5200-data-discovery.mdc`.
 
 ## Pipeline at a glance
 

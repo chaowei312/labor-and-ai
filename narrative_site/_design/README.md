@@ -26,15 +26,15 @@ All paths below are relative to the **read-only reference bundle** at `claude_de
 
 | Path | What I pulled from it |
 |---|---|
-| `claude_design_bundle/CLAUDE_DESIGN_PROMPT.md` | Editorial brief, voice rules, deliverable list, success criteria. Voice section reproduced verbatim in CONTENT FUNDAMENTALS below. |
-| `claude_design_bundle/STORYBOARD.md` | Four-act structure (Where AI is positioned · Through 2023 · Probing the thesis · Where data go silent · Coda watchlist). Per-figure interaction tier table. |
-| `claude_design_bundle/PROJECT_PLAN.md` | Sector-pillar discipline, time window, data-honesty rules ("exposure is not fate"). |
-| `claude_design_bundle/VISUALIZATION_PLAN.md` | Reuters/Pudding reference look, scroll-pacing vocabulary, brief minimums table. |
+| `claude_design_bundle/notes/CLAUDE_DESIGN_PROMPT.md` | Editorial brief, voice rules, deliverable list, success criteria. Voice section reproduced verbatim in CONTENT FUNDAMENTALS below. |
+| `claude_design_bundle/notes/STORYBOARD.md` | Four-act structure (Where AI is positioned · Through 2023 · Probing the thesis · Where data go silent · Coda watchlist). Per-figure interaction tier table. |
+| `claude_design_bundle/notes/PROJECT_PLAN.md` | Sector-pillar discipline, time window, data-honesty rules ("exposure is not fate"). |
+| `claude_design_bundle/notes/VISUALIZATION_PLAN.md` | Reuters/Pudding reference look, scroll-pacing vocabulary, brief minimums table. |
 | `claude_design_bundle/scripts/narrative/figs/_common.py` | The matplotlib palette + style. Exact hex codes for `total/services/education/manufacturing/highlight/low_exposure/high_exposure` are the seed of the web palette so charts read as one project across stacks. |
 | `claude_design_bundle/scripts/narrative/figs/fig_*.py` (8 files) | Chart logic, axis decisions, annotation conventions, what each figure must show. |
 | `claude_design_bundle/narrative_site/figs/fig_*.png` (8 PNGs) | Rendered baselines — the visual register I'm matching and gently upgrading. Copies under `reference/` here. |
 | `claude_design_bundle/narrative_site/index.qmd` | The current Quarto scaffold; what the production page is replacing. |
-| `claude_design_bundle/REQUIREMENTS_REVIEW.md` | Brief-compliance checklist (≥2 static · ≥2 interactive · ≥1 linked · ≥1 infographic). |
+| `claude_design_bundle/notes/REQUIREMENTS_REVIEW.md` | Brief-compliance checklist (≥2 static · ≥2 interactive · ≥1 linked · ≥1 infographic). |
 
 There is **no Figma file**, **no logo**, and **no existing live website beyond the Quarto draft**. The brand identity here is the editorial voice + chart system itself — closer to a newsroom style guide than a tech product brand. This system gives that voice a deliberate visual form.
 

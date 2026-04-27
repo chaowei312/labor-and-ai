@@ -4,7 +4,7 @@ Use this as a **selection menu** for tooling around `data/raw` → `data/process
 
 **Course integrity:** The DSAN 5200 brief restricts **AI-authored narrative**. Using agents or LLMs for **internal EDA, cleaning, or code generation** is common but must be **disclosed** in your **AI usage log** if you rely on them.
 
-**Fork / clone first:** Do **not** recreate upstream skill catalogs from scratch. **Fork** the GitHub repos you need, **clone your forks** into [`vendor/`](vendor/README.md), then copy or adapt skills into `.cursor/skills/`. Optional shallow **reference** clones: [`scripts/vendor/clone_upstream_refs.sh`](scripts/vendor/clone_upstream_refs.sh) / [`clone_upstream_refs.ps1`](scripts/vendor/clone_upstream_refs.ps1). Python deps stay on **`pip` + `requirements-narrative.txt`** unless you contribute patches upstream.
+**Fork / clone first:** Do **not** recreate upstream skill catalogs from scratch. **Fork** the GitHub repos you need, **clone your forks** into [`vendor/`](../vendor/README.md), then copy or adapt skills into `.cursor/skills/`. Optional shallow **reference** clones: [`scripts/vendor/clone_upstream_refs.sh`](../scripts/vendor/clone_upstream_refs.sh) / [`clone_upstream_refs.ps1`](../scripts/vendor/clone_upstream_refs.ps1). Python deps stay on **`pip` + `requirements-narrative.txt`** unless you contribute patches upstream.
 
 ---
 
@@ -14,8 +14,8 @@ Use this as a **selection menu** for tooling around `data/raw` → `data/process
 
 | Layer | Choice | Why |
 |-------|--------|-----|
-| **Core QA / EDA reports** | **[ydata-profiling](https://github.com/ydataai/ydata-profiling)** | **Deterministic**: same CSV → same profile HTML/JSON — best fit for **appendix reproducibility**, grading, and audit. No API keys. Matches “scripted pipeline” mindset ([`scripts/narrative/`](scripts/narrative/README.md)). |
-| **Agentic orchestration** | **Fork → clone → adapt** + **`.cursor/skills/eda-narrative/SKILL.md`** | **Fork** [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) / [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) on GitHub; **clone into** [`vendor/`](vendor/README.md); cherry-pick skills into `.cursor/skills/`. Our `eda-narrative` skill encodes **this repo’s** paths ([`VISUALIZATION_PLAN.md`](VISUALIZATION_PLAN.md), `data/`) — it **extends** upstream patterns, not a greenfield rewrite. |
+| **Core QA / EDA reports** | **[ydata-profiling](https://github.com/ydataai/ydata-profiling)** | **Deterministic**: same CSV → same profile HTML/JSON — best fit for **appendix reproducibility**, grading, and audit. No API keys. Matches “scripted pipeline” mindset ([`scripts/narrative/`](../scripts/narrative/README.md)). |
+| **Agentic orchestration** | **Fork → clone → adapt** + **`.cursor/skills/eda-narrative/SKILL.md`** | **Fork** [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) / [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) on GitHub; **clone into** [`vendor/`](../vendor/README.md); cherry-pick skills into `.cursor/skills/`. Our `eda-narrative` skill encodes **this repo’s** paths ([`VISUALIZATION_PLAN.md`](VISUALIZATION_PLAN.md), `data/`) — it **extends** upstream patterns, not a greenfield rewrite. |
 | **Exploration only (optional)** | **[PandasAI](https://github.com/sinaptik-ai/pandas-ai)** or ad-hoc chat | **Do not treat as source of truth.** Useful for brainstorming questions over a loaded frame; outputs must be **re-implemented** in plain pandas in committed scripts and **logged** if material. Poor fit as pipeline backbone — **non-deterministic** unless you freeze model/version and validate every number. |
 
 **Deferred / not recommended as primary**
@@ -38,7 +38,7 @@ These repositories collect **SKILL.md**-style instructions (load data → valida
 | **OpenAI Skills catalog** (reference format) | https://github.com/openai/skills | Useful as a **pattern** for writing your own `SKILL.md` for BLS → tidy → Quarto. |
 | **datalayer/agent-skills** | https://github.com/datalayer/agent-skills | Python-centric **composable skills** for agents (if you later wire Pydantic AI / custom runners). |
 
-**Practical approach here:** **Fork upstream on GitHub → clone your fork into [`vendor/`](vendor/README.md)** → copy or symlink one **scientific** or **data viz** skill into `.cursor/skills/` and tailor paths to our **`data/` layout** (`sources.yaml`, `raw/` vs `processed/`). Keep **`.cursor/skills/eda-narrative/`** as the project-specific layer on top.
+**Practical approach here:** **Fork upstream on GitHub → clone your fork into [`vendor/`](../vendor/README.md)** → copy or symlink one **scientific** or **data viz** skill into `.cursor/skills/` and tailor paths to our **`data/` layout** (`sources.yaml`, `raw/` vs `processed/`). Keep **`.cursor/skills/eda-narrative/`** as the project-specific layer on top.
 
 ---
 

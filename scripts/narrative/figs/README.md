@@ -53,7 +53,7 @@ Status legend: **draft** = renders cleanly · **debugged** = pass through visual
 
 ## Editorial / EDA gaps still to address
 
-Listed in priority order based on the audience-hook spine in [`STORYBOARD.md`](../../../STORYBOARD.md). The first three are required before the page can credibly engage the AI-throne / capital-concentration thesis the page now uses as its audience hook.
+Listed in priority order based on the audience-hook spine in [`notes/STORYBOARD.md`](../../../notes/STORYBOARD.md). The first three are required before the page can credibly engage the AI-throne / capital-concentration thesis the page now uses as its audience hook.
 
 | Gap | Why it matters | Blocked on / next |
 |---|---|---|

@@ -2,7 +2,7 @@
 
 This folder is a **standalone copy** of the `routing-in-sparse-attention` work for **DSAN 5200**. It is **not** auto-synced with `../routing-in-sparse-attention/` (DSAN **5300**). Affiliation strings were changed to **5200** here only.
 
-**Website:** The extracted brief in [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md) requires a **project website URL** (plus GitHub Classroom). Use [`agent_view/README.md`](agent_view/README.md) to regenerate from `project.pdf` after MinerU updates.
+**Website:** The extracted brief in [`agent_view/project/auto/project.md`](../agent_view/project/auto/project.md) requires a **project website URL** (plus GitHub Classroom). Use [`agent_view/README.md`](../agent_view/README.md) to regenerate from `project.pdf` after MinerU updates.
 
 ## About `project.pdf`
 
