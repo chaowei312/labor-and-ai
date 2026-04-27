@@ -204,9 +204,10 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 10</p>
-      <h3 class="figure-frame__title">Pick a quartile of AI exposure. Both panels redraw together.</h3>
-      <p class="figure-frame__deck">A single control filters two coordinated views: the wage distribution on the left, the SOC family mix on the right. Sweep <span class="mono">Q1</span> &rarr; <span class="mono">Q4</span> to feel where AI is positioned &mdash; the wage distribution shifts right, and the SOC mix concentrates into Computer &amp; Math, Legal, Business &amp; Financial, Management.</p>
+      <p class="figure-frame__kicker">Figure 10 &middot; cohort map, 2018</p>
+      <h3 class="figure-frame__title">Before we test the throne, here are the four cohorts.</h3>
+      <p class="figure-frame__deck">The thesis test in the next chart sorts occupations into AI-exposure quartiles and asks whether <em>their</em> wage dispersion has compressed since 2012. Before that, the reader needs to see what each quartile <em>is</em>. Sweep <span class="mono">Q1</span> &rarr; <span class="mono">Q4</span>: the wage distribution shifts right, and the SOC mix concentrates into Computer &amp; Math, Legal, Business &amp; Financial, and Management. <span class="mono">Q4</span> is the cohort the throne thesis is about.</p>
+      <p class="figure-frame__deck"><b>Why 2018?</b> Felten et al. publish AIOE on SOC 2010, and 2018 is the last clean SOC 2010 OEWS panel before the SOC 2018 vintage flip. The merge is unambiguous in 2018, and the same cohorts persist as the longitudinal sample tested in Figure 09.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_10_linked_view.html?v=3"
@@ -216,8 +217,7 @@ format:
               style="width:100%; height:680px; border:0; background:var(--paper); display:block;"></iframe>
     </div>
     <figcaption>
-      <b>Source</b> &middot; BLS OEWS 2018 annual mean wage &times; Felten et al. AIOE (SOC 2010) &middot; n = 749 matched detailed occupations
-      &nbsp;&middot;&nbsp;<span class="mono">fig_10_linked_view</span>
+      <b>Source</b> &middot; BLS OEWS May 2018 annual mean wage &times; Felten et al. AIOE (SOC 2010) &middot; n = 749 matched detailed occupations &middot; the cohort definitions used in Figure 09.
     </figcaption>
   </figure>
 
