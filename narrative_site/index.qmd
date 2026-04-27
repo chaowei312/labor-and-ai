@@ -61,7 +61,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 08 &middot; interactive</p>
+      <p class="figure-frame__kicker">Figure 08</p>
       <h3 class="figure-frame__title">AI exposure &times; wages &times; employment, 2018</h3>
       <p class="figure-frame__deck">Hover any bubble for occupation, wage, and headcount. Exposure correlates strongly with wages, barely with headcount.</p>
     </header>
@@ -85,7 +85,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 04 &middot; interactive</p>
+      <p class="figure-frame__kicker">Figure 04</p>
       <h3 class="figure-frame__title">How AI exposure is distributed across U.S. occupations</h3>
       <p class="figure-frame__deck">Right-skewed, with a heavy tail of high-exposure cognitive work. Hover bins for counts.</p>
     </header>
@@ -104,7 +104,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 05 &middot; interactive</p>
+      <p class="figure-frame__kicker">Figure 05</p>
       <h3 class="figure-frame__title">Occupation families differ less in median exposure than they do inside themselves.</h3>
       <p class="figure-frame__deck">Within-family spread is the bigger story. Hover any point to surface the occupation title.</p>
     </header>
@@ -134,7 +134,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 01 &middot; interactive</p>
+      <p class="figure-frame__kicker">Figure 01</p>
       <h3 class="figure-frame__title">Indexed sector employment, Jan 2010 = 100</h3>
       <p class="figure-frame__deck">Click a sector in the legend to isolate it. Hover any line for the indexed value.</p>
     </header>
@@ -155,7 +155,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 02 &middot; interactive</p>
+      <p class="figure-frame__kicker">Figure 02</p>
       <h3 class="figure-frame__title">Sector momentum, year-over-year</h3>
       <p class="figure-frame__deck">12-month % change. Hover any panel for month-by-month values; the COVID spike dominates, the post-2021 drift is positive.</p>
     </header>
@@ -174,7 +174,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 03 &middot; interactive</p>
+      <p class="figure-frame__kicker">Figure 03</p>
       <h3 class="figure-frame__title">Structural restructuring is decades old.</h3>
       <p class="figure-frame__deck">Each sector's share of total nonfarm. Education &amp; health pulls ahead; manufacturing drifts down. The shift predates AI.</p>
     </header>
@@ -204,7 +204,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 10 &middot; linked view</p>
+      <p class="figure-frame__kicker">Figure 10</p>
       <h3 class="figure-frame__title">Pick a quartile of AI exposure. Both panels redraw together.</h3>
       <p class="figure-frame__deck">A single control filters two coordinated views: the wage distribution on the left, the SOC family mix on the right. Sweep <span class="mono">Q1</span> &rarr; <span class="mono">Q4</span> to feel where AI is positioned &mdash; the wage distribution shifts right, and the SOC mix concentrates into Computer &amp; Math, Legal, Business &amp; Financial, Management.</p>
     </header>
@@ -223,7 +223,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 06 &middot; interactive</p>
+      <p class="figure-frame__kicker">Figure 06</p>
       <h3 class="figure-frame__title">Wages across the deep-learning era</h3>
       <p class="figure-frame__deck">Annual mean wages by detailed occupation, 2012 &rarr; 2023. The dashed line marks the SOC vintage break, not a market shift.</p>
     </header>
@@ -244,7 +244,7 @@ format:
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
-      <p class="figure-frame__kicker">Figure 07 &middot; interactive</p>
+      <p class="figure-frame__kicker">Figure 07</p>
       <h3 class="figure-frame__title">Wage growth, occupation by occupation</h3>
       <p class="figure-frame__deck">Distribution of nominal wage growth between 2012 and 2018 across 1,344 SOC 2010 occupations. Median &asymp; +13%; the spread is wider than the headline.</p>
     </header>

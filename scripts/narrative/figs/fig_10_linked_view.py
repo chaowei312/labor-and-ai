@@ -198,7 +198,7 @@ def main() -> None:
                     x=0.0, y=-0.16, xref="paper", yref="paper",
                     text=(
                         "Source · BLS OEWS 2018 (annual mean wage) · Felten et al. AIOE (SOC 2010) · "
-                        f"n = {len(df)} matched detailed occupations · linked view"
+                        f"n = {len(df)} matched detailed occupations"
                     ),
                     showarrow=False,
                     xanchor="left", yanchor="top",
