@@ -63,7 +63,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 08</p>
       <h3 class="figure-frame__title">AI exposure &times; wages &times; employment, 2018</h3>
-      <p class="figure-frame__deck">Hover any bubble for occupation, wage, and headcount. Exposure correlates strongly with wages, barely with headcount.</p>
+      <p class="figure-frame__deck">Each point is one detailed occupation in 2018. The cloud bends up and to the right: AI exposure rises with wages (<span class="mono">r = +0.58</span>), and barely at all with headcount. This is the substitution surface the throne thesis would predict &mdash; high-paid cognitive work in the line of fire. It is <em>position</em>, not <em>event</em>; whether the position has produced an event is what Act 2 asks of the post-2010 employment record.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_08_interactive.html?v=3"
@@ -87,7 +87,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 04</p>
       <h3 class="figure-frame__title">How AI exposure is distributed across U.S. occupations</h3>
-      <p class="figure-frame__deck">Right-skewed, with a heavy tail of high-exposure cognitive work. Hover bins for counts.</p>
+      <p class="figure-frame__deck">Most occupations sit on the low side of the AIOE scale; the heavy right tail &mdash; lawyers, financial analysts, software engineers, market researchers &mdash; is where the throne thesis lives. Two thirds of the labor force is not the story the thesis is telling. The investigation that follows works on that long tail, not on the bulk.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_04_interactive.html?v=3"
@@ -106,7 +106,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 05</p>
       <h3 class="figure-frame__title">Occupation families differ less in median exposure than they do inside themselves.</h3>
-      <p class="figure-frame__deck">Within-family spread is the bigger story. Hover any point to surface the occupation title.</p>
+      <p class="figure-frame__deck">Inside the same broad SOC group, a &ldquo;lawyer&rdquo; is one of the most-exposed occupations in the country and a &ldquo;courier&rdquo; is one of the least. Family medians smooth that out and lose the cohort the thesis is actually about. This is the methodological reason the rest of the piece works on AIOE quartiles of detailed occupations &mdash; a sector-level read would average the throne away before the test ever ran.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_05_interactive.html?v=3"
@@ -136,7 +136,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 01</p>
       <h3 class="figure-frame__title">Indexed sector employment, Jan 2010 = 100</h3>
-      <p class="figure-frame__deck">Click a sector in the legend to isolate it. Hover any line for the indexed value.</p>
+      <p class="figure-frame__deck">If the throne thesis were already showing up at sector scale, the high-AIOE band &mdash; <strong>Professional &amp; business services</strong> &mdash; should be bending down or stalling by 2023. It does the opposite: it is the top performer (+35%). The pandemic registers as a single shock, not a regime change. At this scale of resolution the displacement event is not visible.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_01_interactive.html?v=3"
@@ -157,7 +157,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 02</p>
       <h3 class="figure-frame__title">Sector momentum, year-over-year</h3>
-      <p class="figure-frame__deck">12-month % change. Hover any panel for month-by-month values; the COVID spike dominates, the post-2021 drift is positive.</p>
+      <p class="figure-frame__deck">A sector-scale AI displacement shock between 2021 and 2023 should appear as a sustained negative band in one of these panels. Instead the post-COVID drift is positive across all four, with manufacturing's mild early-2024 cooldown the only soft patch. The yearly cadence does not register the event the thesis predicts &mdash; which is exactly why Act 3 has to abandon the sector view and zoom to the occupation level.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_02_interactive.html?v=3"
@@ -176,7 +176,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 03</p>
       <h3 class="figure-frame__title">Structural restructuring is decades old.</h3>
-      <p class="figure-frame__deck">Each sector's share of total nonfarm. Education &amp; health pulls ahead; manufacturing drifts down. The shift predates AI.</p>
+      <p class="figure-frame__deck">Restructuring is the baseline against which any AI signal would have to be detected. Education &amp; health and Professional &amp; business services have been pulling ahead since the 1990s; manufacturing's share has been falling for forty years. Whatever AI is doing, it is overlaid on a much older sector reshuffle &mdash; the question Act 3 carries forward is whether anything inside the high-AIOE cohort separates AI from that long trend.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_03_interactive.html?v=4"
@@ -225,7 +225,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 06</p>
       <h3 class="figure-frame__title">Wages across the deep-learning era</h3>
-      <p class="figure-frame__deck">Annual mean wages by detailed occupation, 2012 &rarr; 2023. The dashed line marks the SOC vintage break, not a market shift.</p>
+      <p class="figure-frame__deck">Each violin is the cross-occupation wage distribution in May of that year. Two findings sit together: medians drift up steadily, and the <em>shape</em> of the distribution is remarkably stable. At the aggregate, neither &ldquo;everyone is being compressed&rdquo; nor &ldquo;the top is pulling away from everyone&rdquo; is what 2012&ndash;2023 actually shows. The 2018 &rarr; 2021 break marks the SOC 2010 &rarr; SOC 2018 vintage flip, not a labor-market event. The aggregate, then, is silent on the thesis &mdash; which is why we now split it.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_06_interactive.html?v=3"
@@ -246,7 +246,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 07</p>
       <h3 class="figure-frame__title">Wage growth, occupation by occupation</h3>
-      <p class="figure-frame__deck">Distribution of nominal wage growth between 2012 and 2018 across 1,344 SOC 2010 occupations. Median &asymp; +13%; the spread is wider than the headline.</p>
+      <p class="figure-frame__deck">If the displacement story were already underway by 2018, the high-AIOE tail of this distribution should be sitting left of zero. It isn't. The mass of 1,344 SOC 2010 occupations is positive (median &asymp; +13%), and the negative left tail is dominated by occupations with no obvious AI mechanism. We read this for shape, not level &mdash; CPI-deflated real wages are a separate question we flag explicitly &mdash; and the shape does not yet show what the thesis would need it to show.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_07_interactive.html?v=3"
@@ -270,7 +270,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 09 &middot; testing the throne</p>
       <h3 class="figure-frame__title">If the throne were being built, the red row would have moved left</h3>
-      <p class="figure-frame__deck">Change in the cross-occupation p90/p50 wage ratio from 2012 to 2023, one row per AIOE quartile. The throne thesis predicts the red (high-AIOE) row sits deepest in the pink zone. It sits on the zero line instead. The rows that actually compress are <em>low</em>-AIOE work.</p>
+      <p class="figure-frame__deck">One row per AIOE quartile. Each line is the <em>change</em> from 2012 to 2023 in the cross-occupation p90/p50 wage ratio &mdash; bars to the left of zero mean the high earners and the median earners moved closer together inside that quartile. The throne thesis predicts the red row (Q4, the most-exposed cognitive cohort) lands deepest in the pink zone. It sits on the zero line. The two rows that <em>did</em> compress are <em>low</em>-AIOE work &mdash; the opposite of the prediction. This is the visible answer in the public panel; what the panel cannot see is what we hand to the coda as a watchlist.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_09_interactive.html?v=3"
