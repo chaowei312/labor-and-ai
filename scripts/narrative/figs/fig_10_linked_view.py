@@ -169,14 +169,14 @@ def main() -> None:
                 "yanchor": "top",
                 "font": {"family": "IBM Plex Sans", "size": 13, "color": COLORS["ink"]},
             },
-            "margin": {"l": 60, "r": 30, "t": 130, "b": 90},
+            "margin": {"l": 60, "r": 30, "t": 110, "b": 90},
             "updatemenus": [
                 dict(
                     type="buttons",
                     direction="right",
                     x=0.0,
                     xanchor="left",
-                    y=1.18,
+                    y=1.14,
                     yanchor="top",
                     pad=dict(t=4, b=4, l=8, r=8),
                     bgcolor=COLORS["paper"],
@@ -187,13 +187,6 @@ def main() -> None:
                 )
             ],
             "annotations": list(fig.layout.annotations) + [
-                dict(
-                    x=0.0, y=1.16, xref="paper", yref="paper",
-                    text="<b>Filter both panels by AI-exposure quartile:</b>",
-                    showarrow=False,
-                    xanchor="left", yanchor="bottom",
-                    font=dict(family="IBM Plex Sans", size=12, color=COLORS["ink_2"]),
-                ),
                 dict(
                     x=0.0, y=-0.16, xref="paper", yref="paper",
                     text=(
