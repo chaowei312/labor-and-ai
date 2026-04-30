@@ -1,8 +1,6 @@
 # Narrative data pipeline (DSAN 5200)
 
-Scripts here build **`data/raw/`** and **`data/processed/`** for the public-facing story. They do **not** relate to ML training in `code_submission/`.
-
-**Cursor skill:** `.cursor/skills/eda-narrative/SKILL.md` documents the same workflow for agents.
+Scripts here build **`data/raw/`** and **`data/processed/`** for the public-facing story.
 
 ## One-time setup
 
