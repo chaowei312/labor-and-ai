@@ -7,7 +7,6 @@ Working theme: **AI-related labor-market change** as an economic / workforce sto
 ## Submission links
 
 - **Live site:** https://chaowei312.github.io/labor-and-ai/
-- **Classroom repo (graded):** https://github.com/dsan-5200/project-2026-36-1
 - **Public mirror (hosts the site):** https://github.com/chaowei312/labor-and-ai
 
 GitHub Pages is restricted to public repos on the org's Free plan, so the Classroom repo is the canonical source of record and the personal mirror is the deployment target. Both repos contain identical commits.
