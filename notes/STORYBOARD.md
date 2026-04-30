@@ -2,7 +2,7 @@
 
 **This is the canonical mapping** between (a) what readers come to the page worried about, (b) what the data can honestly say in response, and (c) which figure carries which beat at which interaction tier. Every claim below is grounded in `data/processed/` artifacts.
 
-Companion docs: [`PROJECT_PLAN.md`](PROJECT_PLAN.md) (editorial intent), [`VISUALIZATION_PLAN.md`](VISUALIZATION_PLAN.md) (design vocabulary & tech stack), [`CLAUDE_DESIGN_PROMPT.md`](CLAUDE_DESIGN_PROMPT.md) (production prompt), [`scripts/narrative/figs/REVIEW.md`](../scripts/narrative/figs/REVIEW.md) (per-figure inspection log).
+Companion docs: [`PROJECT_PLAN.md`](PROJECT_PLAN.md) (editorial intent), [`VISUALIZATION_PLAN.md`](VISUALIZATION_PLAN.md) (design vocabulary & tech stack), [`CLAUDE_DESIGN_PROMPT.md`](CLAUDE_DESIGN_PROMPT.md) (production prompt), [`scripts/figs/README.md`](../scripts/figs/README.md) (per-figure catalog).
 
 ---
 

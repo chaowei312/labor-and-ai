@@ -10,8 +10,8 @@ zip on disk and let downstream scripts (e.g. chunked_csv_profile.py) extract
 selectively to avoid blowing up the repo.
 
 Usage:
-    python scripts/narrative/fetch_oews_year.py --year 2023
-    python scripts/narrative/fetch_oews_year.py --years 2012,2015,2018,2021,2023
+    python scripts/fetch_oews_year.py --year 2023
+    python scripts/fetch_oews_year.py --years 2012,2015,2018,2021,2023
 
 Skips files already present unless --force is passed.
 """

@@ -5,9 +5,9 @@ data/
 ├── README.md           ← this file: human-readable source catalog
 ├── sources.yaml        ← machine-readable catalog (IDs, URLs, merge keys)
 ├── meta/               ← codebooks, crosswalk notes, column dictionaries
-│   └── profiles/      ← ydata-profiling HTML (gitignored; see scripts/narrative/profile_dataset.py)
+│   └── profiles/      ← ydata-profiling HTML (gitignored; see scripts/profile_dataset.py)
 ├── raw/                ← downloaded files as-is (gitignored except **/.gitkeep)
-│   ├── exposure/       ← AIOE xlsx (see scripts/narrative/fetch_aioe_appendix.py)
+│   ├── exposure/       ← AIOE xlsx (see scripts/fetch_aioe_appendix.py)
 │   └── large/          ← optional multi-GB OEWS-style CSVs — use chunked_csv_profile.py
 └── processed/          ← cleaned tables ready for Quarto / viz (small files OK to commit)
 ```

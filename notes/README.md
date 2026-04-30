@@ -1,6 +1,6 @@
 # Notes
 
-Planning, design, and process documents for the DSAN 5200 narrative submission. None of these files are deliverables in themselves — the deliverable is the rendered site under [`../narrative_site/`](../narrative_site/) and the data + figure pipeline under [`../scripts/narrative/`](../scripts/narrative/) and [`../data/`](../data/). These notes exist so the editorial reasoning and audit trail are reproducible.
+Planning, design, and process documents for the DSAN 5200 narrative submission. None of these files are deliverables in themselves — the deliverable is the rendered site under [`../narrative_site/`](../narrative_site/) and the data + figure pipeline under [`../scripts/`](../scripts/) and [`../data/`](../data/). These notes exist so the editorial reasoning and audit trail are reproducible.
 
 | File | Purpose |
 |------|---------|

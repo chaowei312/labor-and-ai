@@ -1,5 +1,5 @@
 """
-_common_retheme.py — drop-in replacement for scripts/narrative/figs/_common.py.
+_common_retheme.py — drop-in replacement for scripts/figs/_common.py.
 
 Same public API (PALETTE, SECTOR_COLOR, SECTOR_LABEL, SECTOR_ORDER, setup_style,
 FigSpec, save_fig, short_label). The only changes are visual: warm-paper

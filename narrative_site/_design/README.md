@@ -13,7 +13,7 @@ A single product, three surfaces:
 | Surface | What it is | Stack |
 |---|---|---|
 | **The narrative page** (`narrative_site/index.qmd`) | The reader-facing scrolly. Four acts + coda, eight figures, two interactives, one linked view, one infographic. | Quarto → static HTML, with embedded Plotly + Observable Plot |
-| **Static figures** (`scripts/narrative/figs/*.py`) | Eight matplotlib drafts already exist; this system retones them (`_common.py`) so web + print share a palette. | matplotlib |
+| **Static figures** (`scripts/figs/*.py`) | Eight matplotlib drafts already exist; this system retones them (`_common.py`) so web + print share a palette. | matplotlib |
 | **Interactive layer** (`*_interactive.html`) | Two Plotly upgrades (`fig_01`, `fig_08`), one Observable-Plot AIOE-slider linked block, one designed two-column infographic. | Plotly / Observable Plot / vanilla JS |
 
 The editorial spine is locked. This system is about **the production layer**: how it *looks*, how it *moves*, how the page's voice avoids partisan triggers while still engaging the worry it knows readers came in with.
@@ -30,8 +30,8 @@ All paths below are relative to the **read-only reference bundle** at `claude_de
 | `claude_design_bundle/notes/STORYBOARD.md` | Four-act structure (Where AI is positioned · Through 2023 · Probing the thesis · Where data go silent · Coda watchlist). Per-figure interaction tier table. |
 | `claude_design_bundle/notes/PROJECT_PLAN.md` | Sector-pillar discipline, time window, data-honesty rules ("exposure is not fate"). |
 | `claude_design_bundle/notes/VISUALIZATION_PLAN.md` | Reuters/Pudding reference look, scroll-pacing vocabulary, brief minimums table. |
-| `claude_design_bundle/scripts/narrative/figs/_common.py` | The matplotlib palette + style. Exact hex codes for `total/services/education/manufacturing/highlight/low_exposure/high_exposure` are the seed of the web palette so charts read as one project across stacks. |
-| `claude_design_bundle/scripts/narrative/figs/fig_*.py` (8 files) | Chart logic, axis decisions, annotation conventions, what each figure must show. |
+| `claude_design_bundle/scripts/figs/_common.py` | The matplotlib palette + style. Exact hex codes for `total/services/education/manufacturing/highlight/low_exposure/high_exposure` are the seed of the web palette so charts read as one project across stacks. |
+| `claude_design_bundle/scripts/figs/fig_*.py` (8 files) | Chart logic, axis decisions, annotation conventions, what each figure must show. |
 | `claude_design_bundle/narrative_site/figs/fig_*.png` (8 PNGs) | Rendered baselines — the visual register I'm matching and gently upgrading. Copies under `reference/` here. |
 | `claude_design_bundle/narrative_site/index.qmd` | The current Quarto scaffold; what the production page is replacing. |
 | `claude_design_bundle/notes/REQUIREMENTS_REVIEW.md` | Brief-compliance checklist (≥2 static · ≥2 interactive · ≥1 linked · ≥1 infographic). |

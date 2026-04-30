@@ -22,7 +22,7 @@ GitHub Pages is restricted to public repos on the org's Free plan, so the Classr
 | File | Purpose |
 |------|---------|
 | [`narrative_site/`](narrative_site/) | Quarto site (renders to `_site/`, gitignored). The deliverable. |
-| [`scripts/narrative/figs/README.md`](scripts/narrative/figs/README.md) | **Per-chart Python chunks** (one figure per file) — review iteratively before knitting into Quarto |
+| [`scripts/figs/README.md`](scripts/figs/README.md) | **Per-chart Python chunks** (one figure per file) — review iteratively before knitting into Quarto |
 | [`data/README.md`](data/README.md) · [`data/sources.yaml`](data/sources.yaml) | Source catalog, merge keys, time windows |
 | [`data/meta/data_diary.md`](data/meta/data_diary.md) | Pipeline status, vintages, suppression caveats |
 | [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md) | MinerU extract of the brief |
@@ -36,16 +36,16 @@ GitHub Pages is restricted to public repos on the org's Free plan, so the Classr
 cd 5200_finalproj
 pip install -r requirements-narrative.txt
 # Bash:
-bash scripts/narrative/run_pipeline.sh
+bash scripts/run_pipeline.sh
 # PowerShell:
-scripts/narrative/run_pipeline.ps1
+scripts/run_pipeline.ps1
 ```
 
 Coverage: BLS CES monthly Jan 2010 → latest, OEWS national anchor years 2012/2015/2018/2021/2023, Felten et al. AIOE (SOC 2010). Snapshots land in [`data/meta/`](data/meta/).
 
 ## One-figure-per-script workflow
 
-Per-chart drafts live in [`scripts/narrative/figs/`](scripts/narrative/figs/) and write standalone PNG/SVG into [`narrative_site/figs/`](narrative_site/figs/). Iterate on each chart by running the matching script alone, then Quarto pages embed finished figures by file path — keeps the giant `index.qmd` from becoming a moving target.
+Per-chart drafts live in [`scripts/figs/`](scripts/figs/) and write standalone PNG/SVG into [`narrative_site/figs/`](narrative_site/figs/). Iterate on each chart by running the matching script alone, then Quarto pages embed finished figures by file path — keeps the giant `index.qmd` from becoming a moving target.
 
 ## Deploying to GitHub Pages
 
@@ -77,10 +77,10 @@ To regenerate figure HTML fragments locally after a data refresh:
 ```bash
 cd 5200_finalproj
 pip install -r requirements-narrative.txt
-python scripts/narrative/fetch_bls_series.py
-python scripts/narrative/materialize_bls_latest.py
-python scripts/narrative/figs/build_linked_view_data.py
-for fig in scripts/narrative/figs/fig_*_interactive.py scripts/narrative/figs/fig_10_linked_view.py; do
+python scripts/fetch_bls_series.py
+python scripts/materialize_bls_latest.py
+python scripts/figs/build_linked_view_data.py
+for fig in scripts/figs/fig_*_interactive.py scripts/figs/fig_10_linked_view.py; do
   python "$fig"
 done
 cd narrative_site && quarto render && open _site/index.html

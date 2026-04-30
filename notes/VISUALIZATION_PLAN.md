@@ -38,7 +38,7 @@ The Labor & AI design system lives at [`narrative_site/_design/`](../narrative_s
 
 All three loaded from Google Fonts CDN via `narrative_site/_design/colors_and_type.css`. matplotlib falls back through `IBM Plex Sans → Inter → DejaVu Sans` so locally-rendered PNGs degrade gracefully when Plex isn't installed; the brand-grade rendering happens on the web.
 
-**Color (locked):** see `narrative_site/_design/colors_and_type.css` and the Python mirror in `scripts/narrative/figs/_common.py` (`PALETTE` dict). The two are kept in sync by hand — when one changes, edit the other in the same commit.
+**Color (locked):** see `narrative_site/_design/colors_and_type.css` and the Python mirror in `scripts/figs/_common.py` (`PALETTE` dict). The two are kept in sync by hand — when one changes, edit the other in the same commit.
 
 **Wiring summary:** `_quarto.yml` loads `colors_and_type.css` + `quarto-overrides.css`; matplotlib scripts pull tokens from `_common.py`; Plotly scripts pull tokens from `_plotly` (which re-exports the design-system Python theme); Observable Plot cells import `observable_theme.js`. Full wiring map in [`narrative_site/_design/INTEGRATION.md`](../narrative_site/_design/INTEGRATION.md).
 

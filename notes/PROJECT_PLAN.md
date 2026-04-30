@@ -62,7 +62,7 @@ Curated open-source options: **[`AGENT_EDA_TOOLS.md`](AGENT_EDA_TOOLS.md)** — 
 
 ## Data strategy (starter sources)
 
-Structured catalog + folders: [`data/README.md`](../data/README.md), [`data/sources.yaml`](../data/sources.yaml). Pipeline scripts: [`scripts/narrative/README.md`](../scripts/narrative/README.md).
+Structured catalog + folders: [`data/README.md`](../data/README.md), [`data/sources.yaml`](../data/sources.yaml). Pipeline scripts: [`scripts/README.md`](../scripts/README.md).
 
 Use **one consistent employment/wage spine** (merge keys = time + geography + SOC or industry):
 
@@ -124,7 +124,7 @@ The sparse-attention / routing research in `../routing-in-sparse-attention/` is 
 1. Lock **geography** (U.S. national + one local) and **2–3 comparison slices** (sectors or SOC groups).
 2. ~~Download and document **data vintages** and merge keys~~ → diary: [`data/meta/data_diary.md`](../data/meta/data_diary.md).
 3. ~~Storyboard~~ → [`STORYBOARD.md`](STORYBOARD.md) (wireframe vs ladder).
-4. ~~Pipeline + Quarto wireframe~~ → `scripts/narrative/run_pipeline.ps1` / `.sh`.
+4. ~~Pipeline + Quarto wireframe~~ → `scripts/run_pipeline.ps1` / `.sh`.
 5. ~~Extend CES to deep-learning era (2010+)~~ → 195 months × 4 sectors, no gaps.
 6. ~~OEWS national panel 2012–2023~~ → `processed/oews_national_panel_long.csv` (≈6.97k rows × 5 anchor years). Apply **SOC 2010 ↔ 2018 crosswalk** to merge AIOE onto post-2019 wage rows; build the **exposure × wage** linked chart for the brief.
 7. Add **interactive / linked** charts; host **GU Domains** when ready.

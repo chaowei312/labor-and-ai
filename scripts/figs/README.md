@@ -6,7 +6,7 @@ Each `fig_*.py` produces **one** figure under [`../../../narrative_site/figs/`](
 
 ```bash
 cd 5200_finalproj
-python scripts/narrative/figs/fig_01_ces_indexed.py
+python scripts/figs/fig_01_ces_indexed.py
 ```
 
 Each script prints a short banner with the data it used (including basic stats), and saves both `<id>.png` and `<id>.svg`.
@@ -16,7 +16,7 @@ Each script prints a short banner with the data it used (including basic stats),
 Bash:
 
 ```bash
-for f in scripts/narrative/figs/fig_*.py; do
+for f in scripts/figs/fig_*.py; do
   echo "=== $f ==="
   python "$f" || break
 done
@@ -25,7 +25,7 @@ done
 PowerShell:
 
 ```powershell
-Get-ChildItem scripts/narrative/figs/fig_*.py | ForEach-Object {
+Get-ChildItem scripts/figs/fig_*.py | ForEach-Object {
   Write-Host "=== $($_.Name) ==="
   python $_.FullName
   if ($LASTEXITCODE -ne 0) { break }

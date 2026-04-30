@@ -4,9 +4,9 @@ Deterministic EDA: ydata-profiling HTML reports for processed CSVs.
 Writes to data/meta/profiles/ under 5200_finalproj by default.
 
 Usage:
-  python scripts/narrative/profile_dataset.py
-  python scripts/narrative/profile_dataset.py --input data/processed/foo.csv
-  python scripts/narrative/profile_dataset.py --minimal
+  python scripts/profile_dataset.py
+  python scripts/profile_dataset.py --input data/processed/foo.csv
+  python scripts/profile_dataset.py --minimal
 """
 from __future__ import annotations
 
@@ -98,7 +98,7 @@ def main() -> None:
         if not targets:
             print(
                 "No CSV files in data/processed/. Add tidy tables or pass --input.\n"
-                "  Example: python scripts/narrative/fetch_bls_series.py\n"
+                "  Example: python scripts/fetch_bls_series.py\n"
                 "  Then create a processed CSV or point --input at a file.",
                 file=sys.stderr,
             )

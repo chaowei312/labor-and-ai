@@ -1,6 +1,6 @@
 # Vendor / upstream repos (fork or clone **before** customizing)
 
-**Policy:** Do **not** rewrite community catalogs or skills from scratch. **Fork on GitHub → clone your fork** into `5200_finalproj/vendor/`, then copy, symlink, or submodule the pieces you need into `.cursor/skills/` or `scripts/narrative/`.
+**Policy:** Do **not** rewrite community catalogs or skills from scratch. **Fork on GitHub → clone your fork** into `5200_finalproj/vendor/`, then copy, symlink, or submodule the pieces you need into `.cursor/skills/` or `scripts/`.
 
 Cloned directories under `vendor/` are **gitignored** in this project (only this `README.md` and `.gitkeep` are tracked) so your course repo stays small.
 

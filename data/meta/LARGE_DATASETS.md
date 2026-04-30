@@ -6,7 +6,7 @@ Place multi‑GB **BLS OEWS** or similar dumps under **`data/raw/large/`** (giti
 
 ```bash
 cd 5200_finalproj
-python scripts/narrative/chunked_csv_profile.py --input data/raw/large/your_file.csv --chunksize 100000
+python scripts/chunked_csv_profile.py --input data/raw/large/your_file.csv --chunksize 100000
 ```
 
 Writes `data/meta/<stem>_chunk_profile.md` with row counts, dtypes, and streaming min/max for numeric columns.

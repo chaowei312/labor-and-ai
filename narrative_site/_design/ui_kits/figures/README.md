@@ -8,7 +8,7 @@ Chart-treatment vocabulary that makes web charts (Plotly, Observable Plot) and p
 |---|---|
 | `plotly_theme.js` | Drop-in Plotly layout template. Use as `Plotly.newPlot(el, traces, {...plotlyTheme.layout})`. |
 | `observable_theme.js` | Observable Plot mark defaults + a wage-hist + sector-mix scaffold for the linked view. |
-| `_common_retheme.py` | Drop-in replacement for `claude_design_bundle/scripts/narrative/figs/_common.py`. Same API, but recolored against the web palette + warm paper neutrals. |
+| `_common_retheme.py` | Drop-in replacement for `claude_design_bundle/scripts/figs/_common.py`. Same API, but recolored against the web palette + warm paper neutrals. |
 
 ## Substitution flag
 

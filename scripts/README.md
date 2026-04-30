@@ -26,24 +26,24 @@ Default coverage targets the **deep-learning era**:
 
 | Step | Command |
 |------|---------|
-| 1. Fetch CES | `python scripts/narrative/fetch_bls_series.py` → `data/raw/bls/*.json` (2010 → latest) |
-| 2. Materialize | `python scripts/narrative/materialize_bls_latest.py` → `data/processed/bls_ces_national_monthly_long.csv` + `data/meta/DATA_SNAPSHOT.md` |
-| 3. Derive | `python scripts/narrative/derive_ces_indices.py` → indexed CSV + **`data/meta/DERIVED_RATES.md`** |
-| 4a. Fetch OEWS (opt-in) | `DSAN5200_FETCH_OEWS=1 ...` then `python scripts/narrative/fetch_oews_year.py --years 2012,2015,2018,2021,2023` → `data/raw/large/oews/oesm{YY}nat.zip` |
-| 4b. Ingest OEWS | `python scripts/narrative/ingest_oews_panel.py` → `data/processed/oews_national_panel_long.csv` + **`data/meta/OEWS_PANEL_SNAPSHOT.md`** |
+| 1. Fetch CES | `python scripts/fetch_bls_series.py` → `data/raw/bls/*.json` (2010 → latest) |
+| 2. Materialize | `python scripts/materialize_bls_latest.py` → `data/processed/bls_ces_national_monthly_long.csv` + `data/meta/DATA_SNAPSHOT.md` |
+| 3. Derive | `python scripts/derive_ces_indices.py` → indexed CSV + **`data/meta/DERIVED_RATES.md`** |
+| 4a. Fetch OEWS (opt-in) | `DSAN5200_FETCH_OEWS=1 ...` then `python scripts/fetch_oews_year.py --years 2012,2015,2018,2021,2023` → `data/raw/large/oews/oesm{YY}nat.zip` |
+| 4b. Ingest OEWS | `python scripts/ingest_oews_panel.py` → `data/processed/oews_national_panel_long.csv` + **`data/meta/OEWS_PANEL_SNAPSHOT.md`** |
 | 5. Tidy | *(other datasets / notebooks)* → **`data/processed/*.csv`** |
-| 6. Profile | `python scripts/narrative/profile_dataset.py` → **`data/meta/profiles/*_profile.html`** |
+| 6. Profile | `python scripts/profile_dataset.py` → **`data/meta/profiles/*_profile.html`** |
 | 7. Site | `cd narrative_site && quarto render` → **`narrative_site/_site/`** |
 
 ```bash
 cd 5200_finalproj
 
-python scripts/narrative/fetch_bls_series.py
+python scripts/fetch_bls_series.py
 
 # After you have CSVs under data/processed/:
-python scripts/narrative/profile_dataset.py
-python scripts/narrative/profile_dataset.py --input data/processed/your_table.csv
-python scripts/narrative/profile_dataset.py --minimal
+python scripts/profile_dataset.py
+python scripts/profile_dataset.py --input data/processed/your_table.csv
+python scripts/profile_dataset.py --minimal
 ```
 
 HTML profiles are **gitignored** (large); keep small **processed** CSVs per course policy.
@@ -65,5 +65,5 @@ HTML profiles are **gitignored** (large); keep small **processed** CSVs per cour
 
 Run from **`5200_finalproj/`** root (paths assume that cwd).
 
-**Full refresh (PowerShell):** `scripts/narrative/run_pipeline.ps1`  
-**Full refresh (Bash):** `bash scripts/narrative/run_pipeline.sh`
+**Full refresh (PowerShell):** `scripts/run_pipeline.ps1`  
+**Full refresh (Bash):** `bash scripts/run_pipeline.sh`

@@ -4,7 +4,7 @@ Use this file when choosing an **occupation × exposure** column to merge with *
 
 ---
 
-**Ingested in this repo:** `scripts/narrative/fetch_aioe_appendix.py` + `ingest_aioe_soc.py` produce **`data/processed/aioe_soc_2010.csv`** and **`meta/EXPOSURE_SNAPSHOT.md`.**
+**Ingested in this repo:** `scripts/fetch_aioe_appendix.py` + `ingest_aioe_soc.py` produce **`data/processed/aioe_soc_2010.csv`** and **`meta/EXPOSURE_SNAPSHOT.md`.**
 
 ---
 

@@ -2,7 +2,7 @@
 Summarize very large CSVs without loading fully into RAM.
 
 Usage:
-  python scripts/narrative/chunked_csv_profile.py --input data/raw/large/oews_all.csv --chunksize 100000
+  python scripts/chunked_csv_profile.py --input data/raw/large/oews_all.csv --chunksize 100000
 
 Writes a short markdown summary to data/meta/ (same stem + _chunk_profile.md).
 

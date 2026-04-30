@@ -45,7 +45,7 @@ A two-column infographic: **what we found** (sector restructuring decades old; A
 | 1 | Plotly interactive of `fig_08_aioe_x_oews_2018` | `{python}` chunk → self-contained HTML | Static is anonymous — hover reveals occupation identity on the +0.58 cloud (Act 1 close) |
 | 2 | Plotly interactive of `fig_01_ces_indexed` | same | Reader needs to isolate one sector to test the displacement prediction (Act 2 open) |
 | 3 | Linked view (AIOE slider → wage hist + emp density + SOC mix) | Observable Plot in `ojs` cell | Brief's linked-view minimum; editorial payoff: reader feels whether high-exposure band shows the predicted collapse (Act 3 open) |
-| 4 | `fig_09_wage_p90_vs_median_by_aioe` — within-occupation p90/p50 wage ratio by AIOE quartile, across years | matplotlib static (or Plotly w/ hover) under `scripts/narrative/figs/` writing to `narrative_site/figs/` | The cheap thesis-test chart. Caption must flag OEWS top-coding (Act 3 close) |
+| 4 | `fig_09_wage_p90_vs_median_by_aioe` — within-occupation p90/p50 wage ratio by AIOE quartile, across years | matplotlib static (or Plotly w/ hover) under `scripts/figs/` writing to `narrative_site/figs/` | The cheap thesis-test chart. Caption must flag OEWS top-coding (Act 3 close) |
 | 5 | Coda infographic — two columns: "What we found" / "What to watch" | static (designed) | Brief's infographic minimum; reader leaves with a watchlist (Coda) |
 | 6 | (Stretch) Hero scrolly at page open with AlexNet 2012 / GPT-3 2020 / ChatGPT 2022 markers | D3 + `<canvas>` or SVG with `IntersectionObserver` | Sets the visual register; only after 1-5 land |
 
@@ -81,10 +81,10 @@ The first design pass is complete and lives at [`narrative_site/_design/`](../na
 | AIOE bipolar | low `#3a8fb7` → mid `#c9b994` → high `#a02030` | `--exp-low` / `--exp-mid` / `--exp-high` |
 | AIOE quartile ramp | `#2e6b8c → #6e9bab → #c79568 → #a02030` | `--aioe-q1..q4` |
 | Watchlist accent | amber `#b07a1f` (coda only) | `--watch` |
-| Plotly theme (Python) | `narrative_site/_design/ui_kits/figures/plotly_theme.py` (use via `from _plotly import apply_theme, COLORS, HTML_CONFIG` in figure scripts) | shim at `scripts/narrative/figs/_plotly.py` |
+| Plotly theme (Python) | `narrative_site/_design/ui_kits/figures/plotly_theme.py` (use via `from _plotly import apply_theme, COLORS, HTML_CONFIG` in figure scripts) | shim at `scripts/figs/_plotly.py` |
 | Plotly theme (JS) | `narrative_site/_design/ui_kits/figures/plotly_theme.js` | for any direct-Plotly.js usage |
 | Observable Plot theme | `narrative_site/_design/ui_kits/figures/observable_theme.js` | import in `ojs` cells |
-| matplotlib theme | `scripts/narrative/figs/_common.py` (already wired to design tokens) | no edits needed |
+| matplotlib theme | `scripts/figs/_common.py` (already wired to design tokens) | no edits needed |
 
 **What this means for you:** color/type/spacing decisions are made — pull from the tokens. Production work is now about *applying* the system to the deliverables, not redesigning it.
 
@@ -111,12 +111,12 @@ Do not micromanage yourself. The editorial calls are settled, the design system 
 | `5200_finalproj/notes/PROJECT_PLAN.md` | Editorial framing, caveats, time window |
 | `5200_finalproj/notes/VISUALIZATION_PLAN.md` | Design vocabulary + locked typography/color spec |
 | `5200_finalproj/agent_view/project/auto/project.md` | The actual course brief |
-| `5200_finalproj/scripts/narrative/figs/REVIEW.md` | Per-figure inspection + role classification |
-| `5200_finalproj/scripts/narrative/figs/README.md` | Figure catalog with status |
-| `5200_finalproj/scripts/narrative/figs/_common.py` | matplotlib palette/style — already wired to design tokens |
-| `5200_finalproj/scripts/narrative/figs/_plotly.py` | Shim re-exporting design-system Plotly theme |
-| `5200_finalproj/scripts/narrative/figs/fig_01_ces_indexed.py` | Source dataframe + chart logic for Plotly #1 |
-| `5200_finalproj/scripts/narrative/figs/fig_08_aioe_x_oews_2018.py` | Source dataframe + chart logic for Plotly #2 |
+| `5200_finalproj/scripts/figs/REVIEW.md` | Per-figure inspection + role classification |
+| `5200_finalproj/scripts/figs/README.md` | Figure catalog with status |
+| `5200_finalproj/scripts/figs/_common.py` | matplotlib palette/style — already wired to design tokens |
+| `5200_finalproj/scripts/figs/_plotly.py` | Shim re-exporting design-system Plotly theme |
+| `5200_finalproj/scripts/figs/fig_01_ces_indexed.py` | Source dataframe + chart logic for Plotly #1 |
+| `5200_finalproj/scripts/figs/fig_08_aioe_x_oews_2018.py` | Source dataframe + chart logic for Plotly #2 |
 | `5200_finalproj/data/meta/data_diary.md` | Provenance, vintages |
 | `5200_finalproj/data/meta/DATA_SNAPSHOT.md` | Basic stats |
 | `5200_finalproj/data/meta/OEWS_PANEL_SNAPSHOT.md` | OEWS-panel stats |
@@ -135,7 +135,7 @@ Suppressed wage values are NaN; SOC vintage flips from `SOC2010` to `SOC2018` be
 
 ## Out of scope (do not touch)
 
-- Data ingest scripts (`scripts/narrative/fetch_*`, `materialize_*`, `ingest_*`, `derive_*`).
+- Data ingest scripts (`scripts/fetch_*`, `materialize_*`, `ingest_*`, `derive_*`).
 - Raw data under `data/raw/`.
 - `routing-in-sparse-attention/` — a separate DSAN 5300 project.
 - Any non-Quarto framework adoption (no SvelteKit, Streamlit, Dash, etc.).

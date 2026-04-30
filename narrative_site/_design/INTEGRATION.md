@@ -11,7 +11,7 @@ The design system has **two parallel sources of truth**: one for the web (CSS), 
 | Surface | Source of truth | Token kind |
 |---|---|---|
 | Web (Quarto HTML, Plotly, Observable Plot) | `narrative_site/_design/colors_and_type.css` | CSS variables `--paper`, `--ink`, `--services`, `--font-serif`, ... |
-| matplotlib statics | `scripts/narrative/figs/_common.py` (`PALETTE` dict) | Python hex strings `"paper": "#fbf9f4"`, etc. |
+| matplotlib statics | `scripts/figs/_common.py` (`PALETTE` dict) | Python hex strings `"paper": "#fbf9f4"`, etc. |
 | Plotly (Python) | `narrative_site/_design/ui_kits/figures/plotly_theme.py` (mirrors `colors_and_type.css`) | `COLORS` dict + `apply_theme()` |
 | Plotly (JS, if used) | `narrative_site/_design/ui_kits/figures/plotly_theme.js` | exported `plotlyTheme` |
 | Observable Plot | `narrative_site/_design/ui_kits/figures/observable_theme.js` | exported `palette`, `plotDefaults`, `sectorScale` |
@@ -41,7 +41,7 @@ format:
 
 ### 2. matplotlib scripts pull from `_common.py`
 
-Every `scripts/narrative/figs/fig_*.py` imports:
+Every `scripts/figs/fig_*.py` imports:
 
 ```python
 from _common import PALETTE, SECTOR_COLOR, SECTOR_LABEL, SECTOR_ORDER, setup_style, FigSpec, save_fig
@@ -49,7 +49,7 @@ from _common import PALETTE, SECTOR_COLOR, SECTOR_LABEL, SECTOR_ORDER, setup_sty
 
 `setup_style()` applies `figure.facecolor = #fbf9f4`, `axes.facecolor = #fbf9f4`, `font.family = ["IBM Plex Sans", "Inter", "DejaVu Sans"]`, gridlines on `#e8e2d3`, ink text. The PNGs and SVGs that land in `narrative_site/figs/` therefore share the web palette without any per-script changes.
 
-`reference/_common_retheme.py` (in the design-system folder) was the model's proposed retheme; the live `scripts/narrative/figs/_common.py` is the merged version. If the design system is ever re-imported, diff the live `_common.py` against `_design/ui_kits/figures/_common_retheme.py` and merge selectively.
+`reference/_common_retheme.py` (in the design-system folder) was the model's proposed retheme; the live `scripts/figs/_common.py` is the merged version. If the design system is ever re-imported, diff the live `_common.py` against `_design/ui_kits/figures/_common_retheme.py` and merge selectively.
 
 ### 3. Plotly (Python) picks up the theme via a shim
 
@@ -72,7 +72,7 @@ fig.write_html(
 )
 ```
 
-`scripts/narrative/figs/_plotly.py` is a thin loader that reads `narrative_site/_design/ui_kits/figures/plotly_theme.py` via `importlib`, so figure scripts never have to know the design-system path.
+`scripts/figs/_plotly.py` is a thin loader that reads `narrative_site/_design/ui_kits/figures/plotly_theme.py` via `importlib`, so figure scripts never have to know the design-system path.
 
 ### 4. Observable Plot cells import the JS theme
 
@@ -101,14 +101,14 @@ Subsequent `ojs` cells then call `Plot.plot({ ...plotDefaults, marks: [...] })`.
 | `_design/assets/` | Wordmark, monogram, Lucide icon subset. | No. |
 | `_design/preview/*.html` | Self-contained design-tab cards (one per token group / component). Open in a browser to preview. | No — authored. |
 | `_design/reference/*.png` | Snapshot of the eight rendered baseline figures the design pass was matching against. | Yes (copied from `narrative_site/figs/`). |
-| `_design/ui_kits/figures/_common_retheme.py` | Proposed retheme of `_common.py` from the design pass. **Reference only** — the merged live version lives at `scripts/narrative/figs/_common.py`. | No. |
+| `_design/ui_kits/figures/_common_retheme.py` | Proposed retheme of `_common.py` from the design pass. **Reference only** — the merged live version lives at `scripts/figs/_common.py`. | No. |
 | `_design/ui_kits/figures/plotly_theme.py` | Python Plotly theme. Imported via `_plotly.py` shim. | No. |
 | `_design/ui_kits/figures/plotly_theme.js` | JS Plotly theme (used only if direct Plotly.js is needed). | No. |
 | `_design/ui_kits/figures/observable_theme.js` | Observable Plot theme. Imported in `ojs` cells. | No. |
 | `_design/ui_kits/narrative_site/*.jsx` | React preview components from the design pass. **Reference only** — we don't have a React build pipeline; these are visual specs we re-implement as plain HTML in Quarto. | No. |
 | `_design/ui_kits/narrative_site/index.html` | Self-contained click-thru of the page-level UI kit. | No. |
-| `scripts/narrative/figs/_common.py` | matplotlib token mirror. Edit when `PALETTE` needs to drift from `colors_and_type.css`. | No. |
-| `scripts/narrative/figs/_plotly.py` | Loader shim — exposes `apply_theme`, `COLORS`, `HTML_CONFIG`. | No. |
+| `scripts/figs/_common.py` | matplotlib token mirror. Edit when `PALETTE` needs to drift from `colors_and_type.css`. | No. |
+| `scripts/figs/_plotly.py` | Loader shim — exposes `apply_theme`, `COLORS`, `HTML_CONFIG`. | No. |
 
 ---
 

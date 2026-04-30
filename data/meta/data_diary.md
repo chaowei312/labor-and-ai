@@ -34,8 +34,8 @@ See `sources.yaml` → `bls_ces.prepared_artifacts.series_ids_used`.
 
 ## OEWS panel (deep-learning era)
 
-- Fetcher: `scripts/narrative/fetch_oews_year.py` (default panel `2012, 2015, 2018, 2021, 2023`; gated by `DSAN5200_FETCH_OEWS=1` in pipeline runners so we do not redownload on every refresh).
-- Ingest: `scripts/narrative/ingest_oews_panel.py` builds `processed/oews_national_panel_long.csv` (≈1.4k SOC rows × 5 anchor years, 2012–2023).
+- Fetcher: `scripts/fetch_oews_year.py` (default panel `2012, 2015, 2018, 2021, 2023`; gated by `DSAN5200_FETCH_OEWS=1` in pipeline runners so we do not redownload on every refresh).
+- Ingest: `scripts/ingest_oews_panel.py` builds `processed/oews_national_panel_long.csv` (≈1.4k SOC rows × 5 anchor years, 2012–2023).
 - Storage: `data/raw/large/oews/oesm{YY}nat.zip` (gitignored).
 - **SOC vintage caveat:** OEWS uses **SOC 2010** through May 2019 and **SOC 2018** from May 2020 onward. Joining to AIOE (SOC 2010) requires the BLS SOC 2010 ↔ 2018 crosswalk before pre-/post-2020 levels can be merged 1:1. The panel carries a `soc_vintage` column to flag this.
 - **Suppression:** wage and employment cells coded `*` / `**` upstream become `NaN`; counts per year are listed in `OEWS_PANEL_SNAPSHOT.md`.

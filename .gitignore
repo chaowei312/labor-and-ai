@@ -23,7 +23,7 @@ narrative_site/agentic_view/
 
 # DSAN 5200 narrative — instructor's classroom guidance: do NOT push data to the
 # cloud repo. Raw downloads, processed CSVs and profiling HTML are all
-# regeneratable from the fetch + materialize scripts under scripts/narrative/.
+# regeneratable from the fetch + materialize scripts under scripts/.
 data/raw/**/*
 !data/raw/**/.gitkeep
 data/processed/*.csv

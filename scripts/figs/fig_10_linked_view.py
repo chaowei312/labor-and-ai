@@ -10,7 +10,7 @@ Selecting a quartile filters both panels in lockstep. Implemented with
 Plotly `updatemenus` buttons that issue a single `restyle` against both
 subplot traces, so the linked behaviour is visible and self-evident.
 
-Pulls the joined CSV produced by `scripts/narrative/figs/build_linked_view_data.py`.
+Pulls the joined CSV produced by `scripts/figs/build_linked_view_data.py`.
 """
 
 from __future__ import annotations
