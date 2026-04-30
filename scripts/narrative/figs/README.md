@@ -34,8 +34,6 @@ Get-ChildItem scripts/narrative/figs/fig_*.py | ForEach-Object {
 
 ## Catalog, role, and status
 
-See [`REVIEW.md`](./REVIEW.md) for the full per-figure inspection. Roles below determine the polish budget.
-
 Role legend: **static-final** = ships as static PNG/SVG on the website · **interactive-target** = matplotlib version is a *design sketch* for a Plotly/D3 hover/brush version on the site · **exploratory** = used internally; not on the site as-is.
 
 Status legend: **draft** = renders cleanly · **debugged** = pass through visual review (no overlap/axis bugs) · **wip** = blocked on data.

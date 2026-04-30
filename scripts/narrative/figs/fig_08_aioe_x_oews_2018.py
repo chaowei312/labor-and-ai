@@ -5,7 +5,7 @@ fig_08_aioe_x_oews_2018 — AI exposure × wage, OEWS 2018 (SOC 2010 era).
     The static matplotlib version exists to validate the data join and the
     encoding choices. The site's final version of this chart should be
     interactive (hover → occupation title, employment, wage; brush AIOE
-    range). See `REVIEW.md` and `interactive_*` placeholders.
+    range). See `interactive_*` placeholders.
 
 What it shows
     Cross-section of detailed occupations in 2018 (last full SOC 2010 year)
