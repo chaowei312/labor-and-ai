@@ -99,19 +99,6 @@ Optional nice-to-haves: dashboard, map, temporal animation — only if they serv
 
 ---
 
-## Technical stack (student-scale)
-
-- **Recommended path in brief:** Quarto → static site + embeds; JS/D3/Leaflet as needed for interactivity and linked views.
-- **Not** the core of this course: training large ML models (keep 5300 code out of the critical path unless it becomes a small, documented vignette with a public hook).
-
----
-
-## Relationship to DSAN 5300 work
-
-The sparse-attention / routing research in `../routing-in-sparse-attention/` is **optional background** only. If referenced, translate to public language; put formal details in the appendix. **5200 success** = narrative site + required viz types + data ethics, not paper-grade ML benchmarks.
-
----
-
 ## Time window
 
 - **Anchor: January 2010.** Two-year baseline ahead of AlexNet (2012); same window covers the post-2017 transformer/LLM wave through the latest available BLS month.
