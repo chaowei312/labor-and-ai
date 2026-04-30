@@ -54,12 +54,6 @@ Keep scope tight: **two fields deeply** or **three lightly** + **one local case*
 
 ---
 
-## Agentic / assisted EDA (optional tooling)
-
-Curated open-source options: **[`AGENT_EDA_TOOLS.md`](AGENT_EDA_TOOLS.md)** — agent **skills** repos (e.g. awesome lists, scientific skills), **PandasAI**, **LangGraph**, deterministic **ydata-profiling**, and a suggested **minimal auditable stack** for `data/raw` → `processed`. **Fork upstream repos before customizing** — see **[`vendor/README.md`](../vendor/README.md)** and **[`scripts/vendor/README.md`](../scripts/vendor/README.md)**. Disclosure in the course **AI usage log** if you use LLM-assisted exploration.
-
----
-
 ## Data strategy (starter sources)
 
 Structured catalog + folders: [`data/README.md`](../data/README.md), [`data/sources.yaml`](../data/sources.yaml). Pipeline scripts: [`scripts/README.md`](../scripts/README.md).

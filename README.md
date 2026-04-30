@@ -28,8 +28,6 @@ GitHub Pages is restricted to public repos on the org's Free plan, so the Classr
 | [`agent_view/project/auto/project.md`](agent_view/project/auto/project.md) | MinerU extract of the brief |
 | [`notes/`](notes/) | Planning, design and process notes (see [`notes/README.md`](notes/README.md)) |
 
-**For agents:** narrative findings must be **discovered from `data/processed/` and `data/meta/`** — [`notes/PROJECT_PLAN.md`](notes/PROJECT_PLAN.md) is hypothesis space, not evidence. See `.cursor/rules/dsan-5200-data-discovery.mdc`.
-
 ## Pipeline at a glance
 
 ```bash
