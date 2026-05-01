@@ -80,13 +80,13 @@ format:
     </figcaption>
   </figure>
 
-  <p class="body-paragraph">Exposure is not uniform across the economy. The AIOE distribution skews right and concentrates in cognitive-occupation families &mdash; office and administrative support, business and financial operations, computer and mathematical, legal &mdash; while production, transportation, and personal-care families sit on the low side. Median exposure within an occupation family says less than the spread inside it: a "lawyer" is one of the most-exposed occupations in the country; a "courier" is one of the least.</p>
+  <p class="body-paragraph">Exposure is not uniform across the economy. The AIOE distribution has a heavy right-tail concentration in cognitive-occupation families &mdash; legal, business and financial operations, computer and mathematical, education and training &mdash; while production, transportation, construction, and personal-care families sit on the low side. A "lawyer" is one of the most-exposed occupations in the country and a "courier" is one of the least &mdash; and within a single occupation family, the AIOE spread can rival the gap between families.</p>
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 04</p>
       <h3 class="figure-frame__title">How AI exposure is distributed across U.S. occupations</h3>
-      <p class="figure-frame__deck">Most occupations sit on the low side of the AIOE scale; the heavy right tail &mdash; lawyers, financial analysts, software engineers, market researchers &mdash; is where the throne thesis lives. Two thirds of the labor force is not the story the thesis is telling. The investigation that follows works on that long tail, not on the bulk.</p>
+      <p class="figure-frame__deck">The AIOE distribution is centered near zero (median = &minus;0.05), but the visible feature is a sharp spike on the right tail at AIOE &asymp; +1.3 &mdash; lawyers, financial analysts, software engineers, market researchers. That spike is where the throne thesis lives. The roughly three-quarters of detailed occupations that fall outside the top quartile aren't the story the thesis is telling. The investigation that follows works on that long tail, not on the bulk.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_04_interactive.html?v=3"
@@ -105,7 +105,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 05</p>
       <h3 class="figure-frame__title">Occupation families differ less in median exposure than they do inside themselves.</h3>
-      <p class="figure-frame__deck">Inside the same broad SOC group, a &ldquo;lawyer&rdquo; is one of the most-exposed occupations in the country and a &ldquo;courier&rdquo; is one of the least. Family medians smooth that out and lose the cohort the thesis is actually about. This is the methodological reason the rest of the piece works on AIOE quartiles of detailed occupations &mdash; a sector-level read would average the throne away before the test ever ran.</p>
+      <p class="figure-frame__deck">Inside a single SOC family the AIOE spread can rival the gap between families &mdash; <strong>Healthcare Practitioners</strong> alone covers nearly the full AIOE scale, and <strong>Office &amp; Admin Support</strong> holds occupations on both ends. Family medians smooth those differences out and lose the cohort the thesis is actually about. This is the methodological reason the rest of the piece works on AIOE quartiles of detailed occupations &mdash; a family-level read would average the throne away before the test ever ran.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_05_interactive.html?v=3"
