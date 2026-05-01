@@ -150,13 +150,13 @@ format:
     </figcaption>
   </figure>
 
-  <p class="body-paragraph">Year-on-year change makes the same point in a different register. After the COVID spike washes out, the post-2021 baseline drift is positive in every sector except manufacturing's early-2024 cooldown. Nothing in the YoY traces signals a sector-level AI displacement event &mdash; not yet, not in this window.</p>
+  <p class="body-paragraph">Year-on-year change makes the same point in a different register. After the COVID spike washes out, services drift positive into 2026 while <strong>manufacturing settles into a sustained negative YoY band from 2024 onward</strong>. The sector that weakens is the low-AIOE one, not the high-AIOE one &mdash; the opposite of what a sector-level AI displacement story would predict.</p>
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 02</p>
       <h3 class="figure-frame__title">Sector momentum, year-over-year</h3>
-      <p class="figure-frame__deck">A sector-scale AI displacement shock between 2021 and 2023 should appear as a sustained negative band in one of these panels. Instead the post-COVID drift is positive across all four, with manufacturing's mild early-2024 cooldown the only soft patch. The yearly cadence does not register the event the thesis predicts &mdash; which is exactly why Act 3 has to abandon the sector view and zoom to the occupation level.</p>
+      <p class="figure-frame__deck">A sector-scale AI displacement shock between 2021 and 2023 should appear as a sustained negative band in the high-AIOE panel &mdash; Professional &amp; business services. It doesn't. The negative band that <em>is</em> visible after 2023 sits in <strong>Manufacturing</strong>, the low-AIOE sector, where YoY growth has been below zero from early 2024 through the end of the panel. Education &amp; health drifts positive throughout. The yearly cadence does not register the event the thesis predicts at sector scale &mdash; which is why Act 3 abandons the sector view and zooms to the occupation level.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_02_interactive.html?v=3"
