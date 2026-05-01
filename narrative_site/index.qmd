@@ -311,7 +311,7 @@ format:
         </div>
         <div>
           <div class="watch-title">AIOE &times; wage paradox</div>
-          <p class="watch-body">AI is positioned over high-wage cognitive work. Through 2023, that positioning has not translated into employment loss in those occupations.</p>
+          <p class="watch-body">AI is positioned over high-wage cognitive work (correlation +0.58 between AIOE and log wages, Fig 08). Through 2023, that positioning has not produced the wage compression the displacement thesis predicts inside the high-AIOE quartile (Fig 09).</p>
         </div>
       </div>
       <div class="watch-item">
@@ -319,8 +319,8 @@ format:
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
         <div>
-          <div class="watch-title">Sector restructuring is decades old</div>
-          <p class="watch-body">Education &amp; health and professional &amp; business services were already pulling ahead by 2010. COVID was a spike, not a regime change.</p>
+          <div class="watch-title">Sector restructuring is the baseline</div>
+          <p class="watch-body">Through the 2010&ndash;2026 window, Education &amp; health gained +2.2 pp of total-nonfarm share and Professional &amp; business services gained +1.3 pp, while Manufacturing lost 0.4 pp. AI is overlaid on a reshuffle already in motion. COVID was a spike, not a regime change.</p>
         </div>
       </div>
       <div class="watch-item">
