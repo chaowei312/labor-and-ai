@@ -61,9 +61,14 @@ body:has(.narrative-page) header#quarto-header > nav.navbar {
   display: none !important;
 }
 
-/* Quarto auto-injects #title-block-header inside <main> even when we set
-   title-block-style: none. Hide it whenever an editorial hero is present.
-   This selector does not rely on :has() so it works on every browser.       */
+/* Quarto auto-injects #title-block-header (and h1.title) even when we set
+   title-block-style: none. Hide it whenever an editorial hero is present
+   regardless of nesting depth — Quarto's exact HTML wrapping varies by
+   version. */
+body:has(.narrative-page) #title-block-header,
+body:has(.narrative-page) .quarto-title-block,
+body:has(.narrative-page) main > h1.title,
+body:has(.narrative-page) header.quarto-title,
 .narrative-page #title-block-header,
 .narrative-page .quarto-title-block,
 .narrative-main > #title-block-header,

@@ -1,5 +1,4 @@
 ---
-title: "Labor & AI"
 pagetitle: "In search of the AI throne · Labor & AI"
 page-layout: full
 toc: false
