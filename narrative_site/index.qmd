@@ -239,13 +239,13 @@ format:
     </figcaption>
   </figure>
 
-  <p class="body-paragraph">A per-occupation view from 2012 to 2018 &mdash; the last clean SOC 2010 window &mdash; shows nominal wage growth nearly everywhere along the 45&deg; line. A handful of occupations break the rule in either direction; the bulk of the labor market grew in nominal terms. Real (CPI-deflated) wages are an open question we flag explicitly.</p>
+  <p class="body-paragraph">A per-occupation view of nominal wage growth from 2012 to 2018 &mdash; the last clean SOC 2010 window &mdash; sits almost entirely to the right of zero. The 1,344 matched SOC 2010 occupations cluster around a median of <strong>+12.8%</strong> (p10 = +7.1%, p90 = +20.0%), with only a thin negative tail. The bulk of the labor market grew in nominal terms over those six years. Real (CPI-deflated) wages are an open question we flag explicitly.</p>
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 07</p>
       <h3 class="figure-frame__title">Wage growth, occupation by occupation</h3>
-      <p class="figure-frame__deck">If the displacement story were already underway by 2018, the high-AIOE tail of this distribution should be sitting left of zero. It isn't. The mass of 1,344 SOC 2010 occupations is positive (median &asymp; +13%), and the negative left tail is dominated by occupations with no obvious AI mechanism. We read this for shape, not level &mdash; CPI-deflated real wages are a separate question we flag explicitly &mdash; and the shape does not yet show what the thesis would need it to show.</p>
+      <p class="figure-frame__deck">If the displacement story were already underway by 2018, more of this distribution should be sitting to the left of zero. It isn't. The 1,344 SOC 2010 occupations cluster around a +12.8% nominal-growth median (p10 = +7.1%, p90 = +20.0%), with only a thin negative tail. This aggregate view does not split occupations by AIOE &mdash; that's the role of Figure 09. The shape here just establishes the baseline: nominal wages broadly grew across the labor market through 2018, and any AI-specific compression has to be visible <em>against</em> that baseline. CPI-deflated real wages are a separate question we flag explicitly.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_07_interactive.html?v=3"
