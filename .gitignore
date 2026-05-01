@@ -34,15 +34,5 @@ data/meta/profiles/*
 # Build artefact for the linked-view chart (data is baked into the HTML output).
 narrative_site/figs/linked_view_data.csv
 
-# Forked / cloned upstream repos (keep vendor/README.md + .gitkeep only)
-vendor/*
-!vendor/README.md
-!vendor/.gitkeep
-
-# Claude Design bundle — regeneratable from source via
-# `python scripts/build_claude_design_bundle.py`. Don't track its contents.
-claude_design_bundle/
-claude_design_bundle.zip
-
 # Original Claude Design system zip — already extracted into narrative_site/_design/
 Labor & AI Narrative Design System.zip

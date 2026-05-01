@@ -1,6 +1,6 @@
-# DSAN 5200 narrative — full refresh (from 5200_finalproj/)
+# DSAN 5200 narrative — full refresh (run from repo root)
 $ErrorActionPreference = "Stop"
-$ProjRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..\")).Path
+$ProjRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\")).Path
 Set-Location $ProjRoot
 
 Write-Host "== fetch BLS =="

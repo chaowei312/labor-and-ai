@@ -5,7 +5,7 @@ Default window covers the modern deep-learning era through today (start = 2010).
 The BLS public API caps a single request at **10 years without a key, 20 with**;
 this script chunks the window automatically and concatenates results.
 
-Writes under data/raw/bls/ relative to 5200_finalproj root.
+Writes under data/raw/bls/ relative to repo root.
 
 Register for BLS_API_KEY at https://www.bls.gov/developers/ (raises daily limits).
 """

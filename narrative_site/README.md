@@ -1,7 +1,7 @@
 # Narrative site (Quarto)
 
 ```bash
-cd 5200_finalproj/narrative_site
+cd narrative_site
 quarto render
 ```
 

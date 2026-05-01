@@ -12,7 +12,7 @@ Use this file when choosing an **occupation × exposure** column to merge with *
 
 | Source | What it is | SOC vintage | Where to get it |
 |--------|------------|-------------|-------------------|
-| **Felten et al. — AI Occupational Exposure (AIOE)** | Links AI capabilities to O\*NET abilities → occupation scores | Originally **SOC 2010** (often distributed with 6-digit SOC); confirm in file header | **`https://github.com/AIOE-Data/AIOE`** — replication materials include **`AIOE_DataAppendix.xlsx`** (scores by occupation / SOC). Fork/clone per [`vendor/README.md`](../../vendor/README.md). |
+| **Felten et al. — AI Occupational Exposure (AIOE)** | Links AI capabilities to O\*NET abilities → occupation scores | Originally **SOC 2010** (often distributed with 6-digit SOC); confirm in file header | **`https://github.com/AIOE-Data/AIOE`** — replication materials include **`AIOE_DataAppendix.xlsx`** (scores by occupation / SOC). |
 
 **Why start here:** Stable GitHub artifact, transparent methodology, commonly paired with US labor statistics in applied work.
 

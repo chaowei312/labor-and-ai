@@ -1,4 +1,4 @@
-# DSAN 5200 narrative pipeline (5200_finalproj/scripts)
+# DSAN 5200 narrative pipeline (scripts/)
 # Install: pip install -r requirements-narrative.txt
 
 pandas>=2.0

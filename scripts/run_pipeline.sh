@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# DSAN 5200 narrative — full refresh (run from 5200_finalproj/)
+# DSAN 5200 narrative — full refresh (run from repo root)
 set -euo pipefail
-cd "$(dirname "$0")/../.."
+cd "$(dirname "$0")/.."
 
 echo "== fetch BLS =="
 python scripts/fetch_bls_series.py

@@ -1,6 +1,6 @@
 # Data-Driven Narrative Project Overview
 
-**Source:** `project.pdf` in the workspace root, converted with MinerU for agent consumption. If the PDF changes, re-run the command in `5200_finalproj/agent_view/README.md`.
+**Source:** `project.pdf` in the workspace root, converted with MinerU for agent consumption. If the PDF changes, re-run the command in `agent_view/README.md`.
 
 ## Overview
 

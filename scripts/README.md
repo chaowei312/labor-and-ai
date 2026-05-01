@@ -5,7 +5,6 @@ Scripts here build **`data/raw/`** and **`data/processed/`** for the public-faci
 ## One-time setup
 
 ```bash
-cd 5200_finalproj
 pip install -r requirements-narrative.txt
 ```
 
@@ -34,8 +33,6 @@ Default coverage targets the **deep-learning era**:
 | 7. Site | `cd narrative_site && quarto render` → **`narrative_site/_site/`** |
 
 ```bash
-cd 5200_finalproj
-
 python scripts/fetch_bls_series.py
 
 # After you have CSVs under data/processed/:
@@ -61,7 +58,7 @@ HTML profiles are **gitignored** (large); keep small **processed** CSVs per cour
 | `profile_dataset.py` | **ydata-profiling** reports for each `data/processed/*.csv` |
 | `run_pipeline.ps1` / `run_pipeline.sh` | Fetch → materialize → derive → profile → Quarto render |
 
-Run from **`5200_finalproj/`** root (paths assume that cwd).
+Run from the repo root (paths assume that cwd).
 
 **Full refresh (PowerShell):** `scripts/run_pipeline.ps1`  
 **Full refresh (Bash):** `bash scripts/run_pipeline.sh`

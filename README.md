@@ -1,6 +1,6 @@
 # DSAN 5200 — Data-Driven Narrative (AI & Labor Markets)
 
-This folder is the **DSAN 5200 submission** workspace. It is **independent** of `../routing-in-sparse-attention/` (DSAN 5300). Nothing in this directory is shared with 5300 — no models, no posters, no figures.
+This repo is the **DSAN 5200 submission** workspace.
 
 Working theme: **AI-related labor-market change** as an economic / workforce story (national → sector → local → expert), anchored at **Jan 2010** so the AlexNet (2012) + transformer/LLM era both sit inside the panel.
 
@@ -31,7 +31,6 @@ GitHub Pages is restricted to public repos on the org's Free plan, so the Classr
 ## Pipeline at a glance
 
 ```bash
-cd 5200_finalproj
 pip install -r requirements-narrative.txt
 # Bash:
 bash scripts/run_pipeline.sh
@@ -73,7 +72,6 @@ The committed `narrative_site/figs/*.html` fragments are the source of truth for
 To regenerate figure HTML fragments locally after a data refresh:
 
 ```bash
-cd 5200_finalproj
 pip install -r requirements-narrative.txt
 python scripts/fetch_bls_series.py
 python scripts/materialize_bls_latest.py

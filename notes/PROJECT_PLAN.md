@@ -1,6 +1,6 @@
 # DSAN 5200 — Data-Driven Narrative (project plan)
 
-This folder holds the **5200 submission** track, separate from `../routing-in-sparse-attention/` (5300 research). The official brief is extracted at [`agent_view/project/auto/project.md`](../agent_view/project/auto/project.md).
+This folder holds the **5200 submission** planning notes. The official brief is extracted at [`agent_view/project/auto/project.md`](../agent_view/project/auto/project.md).
 
 ---
 
@@ -12,7 +12,7 @@ This folder holds the **5200 submission** track, separate from `../routing-in-sp
 
 **Audience:** General public (per brief). Jargon, formal tests, and methods live in the **appendix**.
 
-**Agents & assistants:** Treat sections below as **hypotheses and design intent** — not empirical claims. Findings for charts and copy must come from **`data/processed/`**, **`data/meta/DATA_SNAPSHOT.md`**, and profiling outputs. See `.cursor/rules/dsan-5200-data-discovery.mdc` and `.cursor/skills/eda-narrative/SKILL.md`.
+**Agents & assistants:** Treat sections below as **hypotheses and design intent** — not empirical claims. Findings for charts and copy must come from **`data/processed/`**, **`data/meta/DATA_SNAPSHOT.md`**, and profiling outputs.
 
 ---
 

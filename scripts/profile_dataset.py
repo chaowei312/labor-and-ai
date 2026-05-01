@@ -1,7 +1,7 @@
 """
 Deterministic EDA: ydata-profiling HTML reports for processed CSVs.
 
-Writes to data/meta/profiles/ under 5200_finalproj by default.
+Writes to data/meta/profiles/ under the repo root by default.
 
 Usage:
   python scripts/profile_dataset.py

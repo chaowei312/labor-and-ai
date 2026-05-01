@@ -125,16 +125,7 @@ Subsequent `ojs` cells then call `Plot.plot({ ...plotDefaults, marks: [...] })`.
 - New component vocabularies (a new chart type that needs its own theming)
 - A wholesale redesign for a different audience (e.g. a print version)
 
-The regeneration command:
-
-```bash
-cd 5200_finalproj
-python scripts/build_claude_design_bundle.py
-# then drop the output zip path into a fresh Claude Design session, attaching
-# narrative_site/_design/ as the existing design system to evolve.
-```
-
-When the new zip arrives, diff against `narrative_site/_design/`, merge selectively, and re-edit `_common.py` + `plotly_theme.py` to match any token changes.
+To regenerate, hand the live `narrative_site/_design/` folder to a fresh Claude Design session as the existing design system to evolve. When the new bundle arrives, diff against `narrative_site/_design/`, merge selectively, and re-edit `_common.py` + `plotly_theme.py` to match any token changes.
 
 ---
 

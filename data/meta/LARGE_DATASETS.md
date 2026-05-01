@@ -5,7 +5,6 @@ Place multi‑GB **BLS OEWS** or similar dumps under **`data/raw/large/`** (giti
 ## Streaming profile (no full RAM load)
 
 ```bash
-cd 5200_finalproj
 python scripts/chunked_csv_profile.py --input data/raw/large/your_file.csv --chunksize 100000
 ```
 
@@ -20,4 +19,4 @@ For files that **fit in RAM** (~10–30 GB CSV is feasible with headroom), you m
 
 ## GPU
 
-**Not used** for CSV ingestion — CPU streaming per `AGENT_HARDWARE_BUDGET.md`.
+**Not used** for CSV ingestion — CPU streaming only.

@@ -8,14 +8,14 @@ MinerU also writes JSON alongside (`project_content_list*.json`, `project_model.
 
 ## Regenerate from PDF
 
-From the workspace root (`final-project/`), after updating `project.pdf`:
+After updating `project.pdf`, from the repo root:
 
 ```bash
-mkdir -p 5200_finalproj/agent_view
-mineru -p "project.pdf" -o "5200_finalproj/agent_view" -m auto -b pipeline
+mkdir -p agent_view
+mineru -p "project.pdf" -o "agent_view" -m auto -b pipeline
 ```
 
-Adjust paths if using absolute Windows paths. Output layout is `agent_view/project/auto/project.md`.
+Output layout is `agent_view/project/auto/project.md`.
 
 ## Website requirement
 

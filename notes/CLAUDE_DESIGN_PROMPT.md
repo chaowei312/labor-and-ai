@@ -16,7 +16,7 @@ Use this framing as the production spine. **Use labor-economics vocabulary, not 
 
 ## The story (locked from EDA — do not re-derive)
 
-Four acts + coda, every number sourced from `5200_finalproj/data/processed/*.csv`. Read [`5200_finalproj/notes/STORYBOARD.md`](5200_finalproj/notes/STORYBOARD.md) for the canonical version.
+Four acts + coda, every number sourced from `data/processed/*.csv`. Read [`STORYBOARD.md`](STORYBOARD.md) for the canonical version.
 
 ### Act 1 — Where AI is positioned (the threat model has a basis)
 - AIOE n = 774, p10 −1.27, median −0.05, p90 +1.33. Most-exposed major SOC: Legal +1.35, Business & Financial +1.34.
@@ -61,7 +61,7 @@ Two upgrades required for the page's wage claims to survive review:
 ## Tech envelope (hard constraints)
 
 - Site is **Quarto**; deploys as static HTML. No backend.
-- Interactive output paths: `5200_finalproj/narrative_site/figs/*_interactive.html`, included from `index.qmd`.
+- Interactive output paths: `narrative_site/figs/*_interactive.html`, included from `index.qmd`.
 - Read dataframes only from `data/processed/*.csv`. Do **not** edit the ingest pipeline.
 - Mobile-readable; respect `prefers-reduced-motion`.
 - One unified theme — palette, type ramp, chart chrome — visible across every chart, both web and the existing matplotlib statics.
@@ -102,27 +102,26 @@ Do not micromanage yourself. The editorial calls are settled, the design system 
 
 | Path | Purpose |
 |---|---|
-| `5200_finalproj/narrative_site/_design/README.md` | Design-system spec (color, type, spacing, motion, voice, iconography). Read first. |
-| `5200_finalproj/narrative_site/_design/INTEGRATION.md` | How the design system is wired into Quarto + matplotlib + Plotly + Observable. |
-| `5200_finalproj/narrative_site/_design/colors_and_type.css` | Source of truth for CSS variables. |
-| `5200_finalproj/narrative_site/_design/ui_kits/figures/plotly_theme.py` | Python Plotly theme — use via `_plotly` shim. |
-| `5200_finalproj/narrative_site/_design/ui_kits/figures/observable_theme.js` | Observable Plot theme. |
-| `5200_finalproj/notes/STORYBOARD.md` | Canonical story arc + per-figure plan + brief-minimums map |
-| `5200_finalproj/notes/PROJECT_PLAN.md` | Editorial framing, caveats, time window |
-| `5200_finalproj/notes/VISUALIZATION_PLAN.md` | Design vocabulary + locked typography/color spec |
-| `5200_finalproj/agent_view/project/auto/project.md` | The actual course brief |
-| `5200_finalproj/scripts/figs/REVIEW.md` | Per-figure inspection + role classification |
-| `5200_finalproj/scripts/figs/README.md` | Figure catalog with status |
-| `5200_finalproj/scripts/figs/_common.py` | matplotlib palette/style — already wired to design tokens |
-| `5200_finalproj/scripts/figs/_plotly.py` | Shim re-exporting design-system Plotly theme |
-| `5200_finalproj/scripts/figs/fig_01_ces_indexed.py` | Source dataframe + chart logic for Plotly #1 |
-| `5200_finalproj/scripts/figs/fig_08_aioe_x_oews_2018.py` | Source dataframe + chart logic for Plotly #2 |
-| `5200_finalproj/data/meta/data_diary.md` | Provenance, vintages |
-| `5200_finalproj/data/meta/DATA_SNAPSHOT.md` | Basic stats |
-| `5200_finalproj/data/meta/OEWS_PANEL_SNAPSHOT.md` | OEWS-panel stats |
-| `5200_finalproj/data/sources.yaml` | Source catalog with pull windows |
-| `5200_finalproj/narrative_site/index.qmd` | Current Quarto page (embeds the matplotlib statics) |
-| `5200_finalproj/narrative_site/_quarto.yml` | Quarto config — already loads design-system CSS |
+| `narrative_site/_design/README.md` | Design-system spec (color, type, spacing, motion, voice, iconography). Read first. |
+| `narrative_site/_design/INTEGRATION.md` | How the design system is wired into Quarto + matplotlib + Plotly + Observable. |
+| `narrative_site/_design/colors_and_type.css` | Source of truth for CSS variables. |
+| `narrative_site/_design/ui_kits/figures/plotly_theme.py` | Python Plotly theme — use via `_plotly` shim. |
+| `narrative_site/_design/ui_kits/figures/observable_theme.js` | Observable Plot theme. |
+| `notes/STORYBOARD.md` | Canonical story arc + per-figure plan + brief-minimums map |
+| `notes/PROJECT_PLAN.md` | Editorial framing, caveats, time window |
+| `notes/VISUALIZATION_PLAN.md` | Design vocabulary + locked typography/color spec |
+| `agent_view/project/auto/project.md` | The actual course brief |
+| `scripts/figs/README.md` | Figure catalog with status |
+| `scripts/figs/_common.py` | matplotlib palette/style — already wired to design tokens |
+| `scripts/figs/_plotly.py` | Shim re-exporting design-system Plotly theme |
+| `scripts/figs/fig_01_ces_indexed.py` | Source dataframe + chart logic for Plotly #1 |
+| `scripts/figs/fig_08_aioe_x_oews_2018.py` | Source dataframe + chart logic for Plotly #2 |
+| `data/meta/data_diary.md` | Provenance, vintages |
+| `data/meta/DATA_SNAPSHOT.md` | Basic stats |
+| `data/meta/OEWS_PANEL_SNAPSHOT.md` | OEWS-panel stats |
+| `data/sources.yaml` | Source catalog with pull windows |
+| `narrative_site/index.qmd` | Current Quarto page (embeds the matplotlib statics) |
+| `narrative_site/_quarto.yml` | Quarto config — already loads design-system CSS |
 
 ## Dataframe schemas you'll touch
 
@@ -137,7 +136,6 @@ Suppressed wage values are NaN; SOC vintage flips from `SOC2010` to `SOC2018` be
 
 - Data ingest scripts (`scripts/fetch_*`, `materialize_*`, `ingest_*`, `derive_*`).
 - Raw data under `data/raw/`.
-- `routing-in-sparse-attention/` — a separate DSAN 5300 project.
 - Any non-Quarto framework adoption (no SvelteKit, Streamlit, Dash, etc.).
 
 ## Before you write code
