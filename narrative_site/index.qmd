@@ -56,7 +56,7 @@ format:
   <p class="act-eyebrow">Act 1 · Where AI is positioned</p>
   <h2 class="act-headline">The threat model has a measurable basis.</h2>
 
-  <p class="body-paragraph">The Felten&ndash;Raj&ndash;Seamans <strong>AI Occupational Exposure</strong> index scores 749 detailed U.S. occupations on how much of their task content current AI systems can perform. Cross-referenced with the BLS wage panel for 2018 &mdash; the last full year before the SOC 2010 &rarr; 2018 vintage break &mdash; one fact stands out: AI is positioned over high-wage cognitive work. The correlation between AIOE and log mean wage is <strong>+0.58</strong>. That is exactly the substitution surface the displacement thesis would predict.</p>
+  <p class="body-paragraph">The Felten&ndash;Raj&ndash;Seamans <strong>AI Occupational Exposure</strong> index scores 774 detailed U.S. occupations on how much of their task content current AI systems can perform. Cross-referenced with the BLS wage panel for 2018 &mdash; the last full year before the SOC 2010 &rarr; 2018 vintage break, leaving 749 occupations on both sides of the join &mdash; one fact stands out: AI is positioned over high-wage cognitive work. The correlation between AIOE and log mean wage is <strong>+0.58</strong>; the correlation with employment count is essentially zero (+0.08). That is exactly the substitution surface the displacement thesis would predict.</p>
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
