@@ -16,7 +16,7 @@ Use this framing as the production spine. **Use labor-economics vocabulary, not 
 
 ## The story (locked from EDA — do not re-derive)
 
-Four acts + coda, every number sourced from `data/processed/*.csv`. Read [`STORYBOARD.md`](STORYBOARD.md) for the canonical version.
+Four acts + coda, every number sourced from `data/processed/*.csv`.
 
 ### Act 1 — Where AI is positioned (the threat model has a basis)
 - AIOE n = 774, p10 −1.27, median −0.05, p90 +1.33. Most-exposed major SOC: Legal +1.35, Business & Financial +1.34.
@@ -107,7 +107,6 @@ Do not micromanage yourself. The editorial calls are settled, the design system 
 | `narrative_site/_design/colors_and_type.css` | Source of truth for CSS variables. |
 | `narrative_site/_design/ui_kits/figures/plotly_theme.py` | Python Plotly theme — use via `_plotly` shim. |
 | `narrative_site/_design/ui_kits/figures/observable_theme.js` | Observable Plot theme. |
-| `notes/STORYBOARD.md` | Canonical story arc + per-figure plan + brief-minimums map |
 | `notes/PROJECT_PLAN.md` | Editorial framing, caveats, time window |
 | `notes/VISUALIZATION_PLAN.md` | Design vocabulary + locked typography/color spec |
 | `agent_view/project/auto/project.md` | The actual course brief |

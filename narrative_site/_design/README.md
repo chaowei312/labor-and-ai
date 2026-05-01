@@ -26,8 +26,7 @@ Paths below resolve against the live repo root.
 
 | Path | What I pulled from it |
 |---|---|
-| `notes/CLAUDE_DESIGN_PROMPT.md` | Editorial brief, voice rules, deliverable list, success criteria. Voice section reproduced verbatim in CONTENT FUNDAMENTALS below. |
-| `notes/STORYBOARD.md` | Four-act structure (Where AI is positioned · Through 2023 · Probing the thesis · Where data go silent · Coda watchlist). Per-figure interaction tier table. |
+| `notes/CLAUDE_DESIGN_PROMPT.md` | Editorial brief, voice rules, deliverable list, success criteria. Voice section reproduced verbatim in CONTENT FUNDAMENTALS below. Also carries the four-act spine (Where AI is positioned · Through 2023 · Probing the thesis · Where data go silent · Coda watchlist). |
 | `notes/PROJECT_PLAN.md` | Sector-pillar discipline, time window, data-honesty rules ("exposure is not fate"). |
 | `notes/VISUALIZATION_PLAN.md` | Reuters/Pudding reference look, scroll-pacing vocabulary, brief minimums table. |
 | `scripts/figs/_common.py` | The matplotlib palette + style. Exact hex codes for `total/services/education/manufacturing/highlight/low_exposure/high_exposure` are the seed of the web palette so charts read as one project across stacks. |
@@ -85,7 +84,7 @@ Every paragraph, kicker, tooltip, and chart caption serves that spine. If a stri
 | "high-AIOE occupations", "cognitive work", "professional & business services" | "white-collar workers", "office drones" |
 | "the data go silent", "outside this dataset", "top-coded at $208 k" | "we don't know", "there's no way to tell" |
 
-The hook can speak to the worry. The chart language must remain professional. (`CLAUDE_DESIGN_PROMPT.md`, repeated in `STORYBOARD.md`.)
+The hook can speak to the worry. The chart language must remain professional. (`CLAUDE_DESIGN_PROMPT.md`.)
 
 ### Person / address
 
