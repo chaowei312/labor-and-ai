@@ -135,7 +135,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 01</p>
       <h3 class="figure-frame__title">Indexed sector employment, Jan 2010 = 100</h3>
-      <p class="figure-frame__deck">If the throne thesis were already showing up at sector scale, the high-AIOE band &mdash; <strong>Professional &amp; business services</strong> &mdash; should be bending down or stalling by 2023. It does the opposite: it is the top performer (+35%). The pandemic registers as a single shock, not a regime change. At this scale of resolution the displacement event is not visible.</p>
+      <p class="figure-frame__deck">If the throne thesis were already showing up at sector scale, the high-AIOE band &mdash; <strong>Professional &amp; business services</strong> &mdash; should be the one bending down or stalling by 2023. PBS does plateau after its 2022 peak (index &asymp; 138), drifting down to <strong>+35%</strong> by 2026 &mdash; a faint stall, not a collapse. The actual top performer is <strong>Education &amp; health (+40%)</strong>, and the only sector visibly weakening into the late panel is <strong>Manufacturing (+12%)</strong> &mdash; low-AIOE, the wrong sector for the thesis. The pandemic registers as a single shock, not a regime change. At this scale of resolution, no clean displacement event is visible.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_01_interactive.html?v=3"
