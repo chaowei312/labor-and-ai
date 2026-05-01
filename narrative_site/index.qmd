@@ -199,13 +199,13 @@ format:
   <p class="act-eyebrow">Act 3 &middot; Probing the thesis</p>
   <h2 class="act-headline">Move the threshold. Watch the band.</h2>
 
-  <p class="body-paragraph">If the thesis has a visible signature, it should appear when we isolate the most-exposed occupations and ask whether <em>their</em> wages are compressing. The OEWS panel, anchor years 2012 through 2023, tells a thinner story than the headlines suggest: median wages drift up; the dispersion stays remarkably stable. The 2018 &rarr; 2021 break in the figure marks the SOC 2010 &rarr; SOC 2018 vintage change, not a labor-market event.</p>
+  <p class="body-paragraph">If the thesis has a visible signature, it should appear when we isolate the most-exposed occupations and ask whether <em>their</em> wages are compressing. The OEWS panel, anchor years 2012 through 2023, tells a thinner story than the headlines suggest: median wages drift up, and inside the high-AIOE cohort &mdash; the one the throne thesis is actually about &mdash; wage dispersion barely moves at all. The 2018 &rarr; 2021 break in the figure marks the SOC 2010 &rarr; SOC 2018 vintage change, not a labor-market event.</p>
 
   <figure class="figure-frame">
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 10 &middot; cohort map, 2018</p>
       <h3 class="figure-frame__title">Before we test the throne, here are the four cohorts.</h3>
-      <p class="figure-frame__deck">The thesis test in the next chart sorts occupations into AI-exposure quartiles and asks whether <em>their</em> wage dispersion has compressed since 2012. Before that, the reader needs to see what each quartile <em>is</em>. Sweep <span class="mono">Q1</span> &rarr; <span class="mono">Q4</span>: the wage distribution shifts right, and the SOC mix concentrates into Computer &amp; Math, Legal, Business &amp; Financial, and Management. <span class="mono">Q4</span> is the cohort the throne thesis is about.</p>
+      <p class="figure-frame__deck">The thesis test in the next chart sorts occupations into AI-exposure quartiles and asks whether <em>their</em> wage dispersion has compressed since 2012. Before that, the reader needs to see what each quartile <em>is</em>. Sweep <span class="mono">Q1</span> &rarr; <span class="mono">Q4</span>: the wage distribution shifts right (median goes from $40k to $82k), and the SOC mix moves from production, construction, and transportation work in Q1 toward <strong>Education &amp; Library, Business &amp; Financial, Office &amp; Administrative, Life/Physical/Social Sciences, Management, and Computer &amp; Math</strong> in Q4. The throne thesis usually invokes Computer &amp; Math, Legal, and Finance work specifically &mdash; but the AIOE Q4 quartile is broader than that, and that's the cohort the rest of the piece tests.</p>
       <p class="figure-frame__deck"><b>Why 2018?</b> Felten et al. publish AIOE on SOC 2010, and 2018 is the last clean SOC 2010 OEWS panel before the SOC 2018 vintage flip. The merge is unambiguous in 2018, and the same cohorts persist as the longitudinal sample tested in Figure 09.</p>
     </header>
     <div class="figure-frame__chart">
