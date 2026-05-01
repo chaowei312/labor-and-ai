@@ -224,7 +224,7 @@ format:
     <header class="figure-frame__head">
       <p class="figure-frame__kicker">Figure 06</p>
       <h3 class="figure-frame__title">Wages across the deep-learning era</h3>
-      <p class="figure-frame__deck">Each violin is the cross-occupation wage distribution in May of that year. Two findings sit together: medians drift up steadily, and the <em>shape</em> of the distribution is remarkably stable. At the aggregate, neither &ldquo;everyone is being compressed&rdquo; nor &ldquo;the top is pulling away from everyone&rdquo; is what 2012&ndash;2023 actually shows. The 2018 &rarr; 2021 break marks the SOC 2010 &rarr; SOC 2018 vintage flip, not a labor-market event. The aggregate, then, is silent on the thesis &mdash; which is why we now split it.</p>
+      <p class="figure-frame__deck">Each box is the cross-occupation wage distribution in May of that year. Two readings sit together: medians drift up steadily &mdash; a roughly 34% nominal climb over the window, in the neighborhood of CPI &mdash; and the <em>interquartile body</em> of the distribution holds its shape. The upper whisker does extend: the highest-paid occupations pull further from the median in nominal terms across the panel. But the aggregate cannot tell us whether that upper-tail movement is AI-driven or just the post-COVID wage cycle, and at this resolution it cannot test the thesis at all. The 2018 &rarr; 2021 break marks the SOC 2010 &rarr; SOC 2018 vintage flip, not a labor-market event. The aggregate, then, is too coarse for the thesis test &mdash; which is why we now split it.</p>
     </header>
     <div class="figure-frame__chart">
       <iframe src="figs/fig_06_interactive.html?v=3"
